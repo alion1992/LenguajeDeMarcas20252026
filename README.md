@@ -51,8 +51,7 @@ Aquí encontrarás todo el material necesario para el curso: apuntes, ejercicios
 
 **Francisco Alía**  
 Profesor de DAM / DAW  
-IES Virgen de Gracia – Puertollano  
+CIFP Virgen de Gracia – Puertollano  
 
 ---
 
-> 💡 *“El código bien escrito es aquel que otro puede entender y mejorar. Usa Git para que tu trabajo siempre esté en evolución.”*
