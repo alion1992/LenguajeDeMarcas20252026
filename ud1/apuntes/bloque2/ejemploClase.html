@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos bloques</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <blockquote cite="www.ejemplo.com">
+        Este error es de carcel
+    </blockquote>
+    <!--<q>Este error es de carcel</q>-->
+    <canvas id="miCanvas" width="400" height="200">
+        Tu navegador no soporta el elemento canvas.
+    </canvas>
+    <details>
+        <summary>Datos de la persona</summary>
+        <p>Nombre: Francisco Alia</p>
+        <p>Fecha Nacimiento: 04/05/1992</p>
+        <p>Ciudad: Ciudad Real</p>
+    </details>
+    <dialog id="miDialogo">
+        <p>Hola mi nombre es Francisco </p>
+        <button id="cerrar">Cerrar</button>
+    </dialog>
+    <button id="abrir">Abrir</button>
+
+
+</body>
+<script>
+    //alert('Hola este es mi primer codigo en js')
+    let c = document.getElementById("miCanvas");
+    let ctx = c.getContext("2d");  // contexto 2D
+
+    // Dibujar un rectángulo rojo
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 150, 100);
+
+    // Dibujar un círculo azul
+    ctx.beginPath();
+    ctx.arc(250, 100, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+
+    const dialogo = document.getElementById("miDialogo");
+    const abrir = document.getElementById("abrir");
+    const cerrar = document.getElementById("cerrar");
+
+    abrir.addEventListener("click", () => dialogo.showModal()); // abre como modal
+    cerrar.addEventListener("click", () => dialogo.close());    // cierra
+</script>
+</html>
