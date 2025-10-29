@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body{
+            background-color: beige;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <hr>
+    <form onsubmit="alert('Se ha guardado la persona'); return false" method="post">
+        <!--Campo fecha de nacimiento y maxima longitud de dni de 9 caracteres-->
+        
+            
+        
+        <label for="dni">DNI:</label>
+        <input id="dni" value="00000000H" name="dni" maxlength="9" minlength="2">
+        
+        <br>
+        <label for="fecha">Fecha</label>
+        <input type="date" value="" name="fecha" id="fecha">
+        <br>
+        <label for="idNombre">Nombre*: </label>
+        <input id="idNombre" value="" name="nombrePersona" required>
+        <br>
+        <label for="idApellido1">Primer Apellido*: </label>
+        <input id="idApellido1" value="" name="apellido1Persona" required>
+        <br>
+        <label for="idApellido2">Segundo Apellido: </label>
+        <input id="idApellido2" value="" name="apellido2Persona">
+        <br>
+        <input type="submit" value="Registrar">
+        <!--<input type="button" value="Botón con input">-->
+        
+    
+
+        
+    </form>
+
+</body>
+</html>

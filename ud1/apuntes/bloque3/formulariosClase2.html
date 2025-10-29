@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            margin: auto;
+            text-align: center;
+            background-color:gainsboro;
+
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <form onsubmit="alert('Se ha guardado'); return false" method="post">
+        <fieldset style="width: 400px;margin: auto;">
+            <summary> Datos de la persona</summary>
+            <br>
+            <label for="nombreCompleto">Nombre Completo:</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" value=""
+            placeholder="Ingrese su nombre aquí" required size="30" 
+            minlength="8" maxlength="30">
+         </fieldset>
+        <br>
+        <fieldset style="width: 400px;margin: auto;">
+            <summary>Datos Bancarios</summary>
+            <br>
+            <label for="numeroCuenta">Número de Cuenta:</label>
+            <input type="text" id="numeroCuenta" name="numeroCuenta" 
+            readonly value="ES21 2055 2594 0660 5982 9364" size="30">
+            <br>
+            <label for="saldo">Saldo:</label>
+            <input type="number" id="saldo" value="500" min="0" max="520" >
+            <br>
+            <label for="fechaCuenta">Fecha Apertura Cuenta:</label>
+            <input type="date" id="fechaCuenta" value="2025-10-21" 
+            min="2025-10-21" max="2025-11-23">
+        </fieldset>
+        <br>
+        <input type="submit" value="Guardar Cambios">
+        <input type="reset" value="Limpiar Formulario">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body{
+            margin: auto;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="alert('Hola enviado'); return false" method="post"
+     enctype="multipart/form-data" name="miFormulario" autocomplete="on" novalidate>
+        
+        <fieldset>
+            <legend>Persona</legend>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" placeholder="Ingrese su nombre aqui" size="40" name="nombreUsuario" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input id="apellido" name="apellidoUsuario">
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" size="3" id="edad" max="9" min="0" value="20">
+        </fieldset>
+        <fieldset>
+            <legend>
+                Datos Bancarios
+            </legend>
+            <label for="iban">IBAN:</label>
+            <input id="iban" name="iban">
+
+            <progress value="50" max="100"></progress>
+        </fieldset>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
