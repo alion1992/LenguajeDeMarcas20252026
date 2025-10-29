@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Aqui tienes una cita de la web del ejemplo</p>
+    <blockquote cite="www.ejemplo.com">
+        Esto es un ejemplo
+    </blockquote>
+  
+    <!--<canvas id="miCanvas" width="400" height="200">
+        Tu navegador no soporta el elemento canvas.
+    </canvas>-->
+    <details>
+        <summary>
+            Persona
+        </summary>
+        Francisco 
+        Alia Hernandez
+
+    </details>
+    <dialog id="miDialogo" >
+        <p>Como mostrar el dialog</p>
+        <button id="cerrar">Cerrar diálogo</button>
+    </dialog>
+    <button id="abrir">Abrir diálogo</button>
+
+</body>
+<script>
+    // Obtener el canvas
+   /* let c = document.getElementById("miCanvas");
+    let ctx = c.getContext("2d");  // contexto 2D
+
+    // Dibujar un rectángulo rojo
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 150, 100);
+
+    // Dibujar un círculo azul
+    ctx.beginPath();
+    ctx.arc(250, 100, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "blue";
+    ctx.fill();*/
+
+    const dialogo = document.getElementById("miDialogo");
+    const abrir = document.getElementById("abrir");
+    const cerrar = document.getElementById("cerrar");
+
+    abrir.addEventListener("click", () => dialogo.showModal()); // abre como modal
+    cerrar.addEventListener("click", () => dialogo.close());    // cierra
+
+</script>
+</html>
