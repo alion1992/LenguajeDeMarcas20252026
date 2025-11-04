@@ -1,0 +1,71 @@
+* {
+    color:black
+
+}
+
+body { 
+            background-color: aqua;
+            text-align: center;
+            background: url(../img/hello.jpg);
+            
+    }
+h1 {
+    font-size: 28px;
+    color: brown;
+    background-color: aquamarine;
+}
+
+a {
+    font-size: 32px;
+}
+
+.claseEjemplo {
+    background-color: chocolate;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.claseEjemplo input {
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.claseEjemplo button {
+    font-weight: bold;
+    border: 2px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+#nombre1 {
+    color:black
+}
+
+#nombre2 {
+    color: blue
+}
+
+#nombre3 {
+    color: black;
+}
+
+#boton1 {
+    background-color: violet;
+}
+
+#boton2 {
+    background-color: beige;
+}
+
+.botonera {
+    text-align: right;
+    margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+* {
+    background-color: aliceblue;
+}
+body {
+  background: url(hello.jpg);
+}
+h1 {
+    background-color: aqua;
+    color: azure;
+    text-align: center;
+}
+
+#campo {
+    color: blueviolet;
+}
+
+.clase {
+  background-color: #4CAF50;
+  text-align: center;
+}
+
+.clase input {
+  padding-bottom: 100px;
+  padding: 10px;
+  padding-left: 5px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
