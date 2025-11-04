@@ -1,0 +1,13 @@
+Todos los enlaces con title saldrán azules.
+
+El que abre en nueva pestaña (target="_blank") estará en negrita.
+
+El que tiene "libre" en el título (Wikipedia) será verde.
+
+El que tiene "enlace-local" subrayado.
+
+Los que empiecen por https tendrán fondo amarillo.
+
+El que acabe en .html tendrá borde rojo.
+
+El de data-info="mi enlace especial" tendrá fondo rosa.
