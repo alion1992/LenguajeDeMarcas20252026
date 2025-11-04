@@ -1,0 +1,28 @@
+a[target="_blank"] {
+  font-weight: bold;
+}
+
+/* [atributo~="texto"] → contiene la palabra exacta dentro de una lista separada por espacios */
+a[title©="libre"] {
+  color: green;
+}
+
+/* [atributo|="texto"] → empieza con texto o texto seguido de guion */
+a[title|="enlace"] {
+  text-decoration: underline;
+}
+
+/* [atributo^="texto"] → comienza por texto */
+a[href^="https"] {
+  background-color: lightyellow;
+}
+
+/* [atributo$="texto"] → termina en texto */
+a[href$=".html"] {
+  border: 2px solid red;
+}
+
+/* [atributo*="texto"] → contiene texto en cualquier parte */
+a[data-info*="especial"] {
+  background-color: lightpink;
+}
