@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="css/selectores.css"/>
+</head>
+<body>
+    <div id="cabecera">
+        <h1>SELECTORES EN CLASE</h1>
+    </div>
+    <hr>
+    <div class="formularios">
+        <form onsubmit="alert('Se han enviado los datos de la persona'); return false" method="post">
+             <label for="idNombre">Nombre:</label>
+             <input type="text" id="idNombre" name="nombre" value="" required>
+             <label for="idApellido">Apellido:</label>
+             <input id="idApellido" name="apellido" value="">
+
+             <br>
+             <br>
+            <label for="idFechaNacimiento"> Fecha Nacimiento:</label>
+            <input type="date" id="idFechaNacimiento" value="">  
+            <label for="idNacionalidad">Nacionalidad:</label>
+            <select id="idNacionalidad">
+                <option selected>Española</option>
+                <option>Francesa</option>
+                <option>Alemana</option>
+                <option>Italiana</option>
+                <option>Danesa</option>
+                <option>Belga</option>
+            </select>
+             <br>
+             <br>
+             <button type="submit"> Enviar</button>
+             <button type="reset"> Limpiar</button>   
+        </form>
+
+    </div>
+    <div class="informacion">
+        <p> Esta página enviar los datos de las personas al instituto</p>
+        <p> El bóton de enviar manda los datos de nombre, 
+            apellido, fecha de nacimiento y nacionalidad</p>
+        <p> El botón limpiar elimina el valor de todos los campos</p>
+        <!-- Nuevo formulario para pedir ayuda solo constara de un 
+         campo correo electrónico y un botón enviar. Cuando se pulse el botón enviar
+         si el correo tiene valor se muestra un popap de que se envian los datos-->
+
+         
+    </div>
+</body>
+</html>
