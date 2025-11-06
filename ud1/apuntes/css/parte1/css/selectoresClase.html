@@ -33,8 +33,10 @@
             </select>
              <br>
              <br>
-             <button type="submit"> Enviar</button>
-             <button type="reset"> Limpiar</button>   
+             <div class="botonera">
+                <button type="submit"> Enviar</button>
+                <button type="reset"> Limpiar</button>   
+             </div>
         </form>
 
     </div>
@@ -47,7 +49,34 @@
          campo correo electrónico y un botón enviar. Cuando se pulse el botón enviar
          si el correo tiene valor se muestra un popap de que se envian los datos-->
 
-         
+         <div class="formularios">
+            <form onsubmit="alert('Se ha enviado el correo correctamente'); return false" method="post">
+                <label for="idCorreo">Correo:</label>
+                <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,3})$" placeholder="ejemplo@ejemplo.com" id="idCorreo" value=""  size="30 ">
+                <br>
+                <br>
+                
+                <button type="submit">Enviar</button>
+                <br>
+                <br>
+                <a href="https://cifpvirgendegracia.com/">Visita nuestra web</a>
+            </form>
+         </div>
     </div>
 </body>
 </html>
+
+<!--Todos los botones redondeados las esquinas y con margenes en top, botton, 
+rigth y left para que se vean mas grandes-->
+
+<!-- Del formulario del los datos de las personas tiene que estar la botonera alineada
+ a la derecha-->
+ <!-- Del formulario del correo en el centro -->
+<!-- todos los label del de los formularios en negrita-->
+ <!-- todos los formaluarios con fondo de pantalla de un color uniforme y suave-->
+
+<!--Selectores pseudoclases-->
+<!--p los pares azulitos y los impares gris
+cuando pases por encima que se ponga amarillo y añadir   transform: scale(1.05);
+  transition: 0.3s; 
+  el enlace cuando sea visitado que se ponga en rojo -->

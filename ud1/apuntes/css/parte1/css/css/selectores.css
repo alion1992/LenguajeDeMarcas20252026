@@ -9,4 +9,24 @@ body {
 }
 
 
+.formularios {
+    background-color: burlywood;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formularios button{
+    
+    font-weight: bold;
+}
+
+.botonera {
+     text-align: right;
+     margin-right: 10px;
+}
 
