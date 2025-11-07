@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo de Pseudo-clases</title>
+<style>
+/* Párrafos */
+
+
+p:first-of-type {
+  color: blue;
+  font-weight: bold;
+}
+
+p:first-child {
+  text-decoration: underline;
+}
+
+p:last-child {
+  color: green;
+}
+
+p:nth-child(4) {
+  font-style: italic;
+}
+
+p:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+p:nth-child(odd) {
+  background-color: #e0e0ff;
+}
+
+/* Enlaces */
+a:visited {
+  color: purple;
+}
+
+a:active {
+  color: red;
+}
+
+/* Checkbox y radio */
+input:checked {
+  outline: 2px solid green;
+  accent-color: rgb(0, 128, 122); /* Cambia el color de marcado */
+}
+
+p:hover {
+  background-color: orange;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+</style>
+</head>
+<body>
+
+<h2>Ejemplo de selectores CSS</h2>
+
+<section>
+  <p>Párrafo 1</p>
+  <p>Párrafo 2</p>
+  <p>Párrafo 3</p>
+  <p>Párrafo 4</p>
+  <p>Párrafo 5</p>
+  <p>Párrafo 6</p>
+</section>
+
+
+<h3>Enlaces</h3>
+<a href="https://www.google.com" target="_blank">Ir a Google</a><br>
+<a href="https://www.wikipedia.org" target="_blank">Ir a Wikipedia</a>
+
+<h3>Controles de formulario</h3>
+<label><input type="checkbox" checked> Acepto los términos</label><br>
+<label><input type="radio" name="opcion" checked> Opción 1</label><br>
+<label><input type="radio" name="opcion"> Opción 2</label>
+
+</body>
+</html>
