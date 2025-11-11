@@ -1,0 +1,50 @@
+footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+}
+
+header {
+            background-color: rgba(15, 18, 175,70%);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+main {
+            padding: 20px;
+            text-align: center;
+            
+
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    /*background-image: linear-gradient(to right, red, yellow);
+    background-image: radial-gradient(circle, blue, white);*/
+    background-size: cover;
+    /*background-size: contain;*/  
+}
+
+nav.sidebar {
+    position: fixed;
+    top: 20;
+    left: 0;
+    margin-left: 8px;
+    width: var(--sidebar-w);
+    height: 80vh;              
+    background: #1f2937;        
+    color: #fff;
+    overflow-y: auto;          
+    padding: 16px 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,.15);
+  }
+
+  p {
+    font-family: "Story Script", sans-serif;
+  }
+
