@@ -19,15 +19,14 @@ main {
 
 body {
     
-    background-image: url(../img/fondo.jpg);
-    background-repeat: repeat-x;
+    background: repeat-x url(../img/fondo.webp);
     
 }
 
 footer {
     background-color: black;
     padding: 20px;
-   
+    padding-top: 30px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -36,7 +35,9 @@ footer {
 
 footer p{
     color: #7a8c3e;
-    color:rgb(186, 118, 118)
+    font-weight: bold ;
+    font-style: italic;
+    
 }
 
 
