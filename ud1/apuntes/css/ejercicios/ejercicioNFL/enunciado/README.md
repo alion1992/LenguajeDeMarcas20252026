@@ -17,8 +17,6 @@ Debéis enlazar un archivo styles.css desde vuestro HTML.
 
 Diseñad una clase general de botones (.btn) que se pueda reaplicar en toda la web.
 
-Añadid variaciones mediante clases secundarias (.primario, .secundario, .alerta, etc.).
-
 Cread una clase para inputs y formularios (.input-text, .form-control, etc.), para que los campos de formulario tengan un estilo uniforme.
 
 Aplicad pseudoclases como :hover, :focus y :checked.
