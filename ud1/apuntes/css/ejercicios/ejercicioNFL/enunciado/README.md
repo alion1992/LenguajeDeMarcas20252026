@@ -1,12 +1,14 @@
-Vais a trabajar sobre una página web con temática NFL que contiene formularios, botones y diferentes secciones.
+<h1>EJERCIO NFL MADRID 2025</h1>
+
+Vamos a trabajar sobre una página web con temática NFL que contiene formularios, botones y diferentes secciones.
 El objetivo es crear una hoja de estilos profesional, utilizando clases, ids, selectores avanzados y estilos reutilizables.
 
-Tareas a realizar
-1.Crear una hoja de estilos CSS externa
+### Tareas a realizar
+<strong>1.Crear una hoja de estilos CSS externa</strong>
 
 Debéis enlazar un archivo styles.css desde vuestro HTML.
 
-2.Crear estilos reutilizables
+<strong>2.Crear estilos reutilizables</strong>
 
 Diseñad una clase general de botones (.btn) que se pueda reaplicar en toda la web.
 
@@ -16,7 +18,7 @@ Cread una clase para inputs y formularios (.input-text, .form-control, etc.), pa
 
 Aplicad pseudoclases como :hover, :focus y :checked.
 
-3.Utilizar selectores por id
+<strong>3.Utilizar selectores por id</strong>
 
 Al menos dos elementos deben ser estilizados usando su id.
 Ejemplos:
@@ -27,7 +29,7 @@ Un bloque concreto como el formulario (#form-jugador)
 
 El buscador (#buscar)
 
-4.Diseñar cabecera y pie de página
+<strong>4.Diseñar cabecera y pie de página</strong>
 
 La web debe tener:
 
@@ -37,7 +39,7 @@ Un pie de página (footer) con el texto “Draft NFL – DAW/DAM.
 
 Ambos deben tener estilos propios y diferenciados.
 
-5. Crear una segunda página: contacto.html
+<strong>5.Crear una segunda página: contacto.html</strong>
 
 Debéis crear una página de contacto que incluya un formulario básico (nombre, email y mensaje).
 
@@ -45,13 +47,13 @@ Debe reutilizar los mismos estilos creados en styles.css sin hacer nuevas clases
 
 Solo se permite crear estilos nuevos si realmente son específicos de la página de contacto.
 
-6. Establecer coherencia visual
+<strong>6.Establecer coherencia visual</strong>
 
 Los estilos deben ser coherentes entre ambas páginas.
 
 Debéis usar tipografías, colores y márgenes que den sensación de proyecto unificado.
 
-7. Uso obligatorio de selectores variados
+<strong>7.Uso obligatorio de selectores variados</strong>
 
 La entrega debe incluir:
 
@@ -59,6 +61,6 @@ La entrega debe incluir:
 
 ✔ Selectores por id
 
-✔ Selectores por atributo (ej: [type="radio"], [data-info="oculto"])
+✔ Selectores por atributo (ej: [type="radio"])
 
 ✔ Pseudoclases
