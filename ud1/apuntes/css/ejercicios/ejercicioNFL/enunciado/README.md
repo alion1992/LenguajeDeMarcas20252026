@@ -1,5 +1,5 @@
 
-<h1 align="center">EJERCIO NFL MADRID 2025</h1>
+<h1 align="center">EJERCICIO NFL MADRID 2025</h1>
 
 <p align="center">
 <img width="600" height="632" alt="image" src="https://github.com/user-attachments/assets/6baec671-2677-416f-89b9-5b8aba489c78" />
