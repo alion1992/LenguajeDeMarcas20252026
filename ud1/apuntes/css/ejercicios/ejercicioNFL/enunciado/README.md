@@ -1,4 +1,9 @@
-<h1>EJERCIO NFL MADRID 2025</h1>
+
+<h1 align="center">EJERCIO NFL MADRID 2025</h1>
+
+<p align="center">
+<img width="600" height="632" alt="image" src="https://github.com/user-attachments/assets/6baec671-2677-416f-89b9-5b8aba489c78" />
+</p>
 
 Vamos a trabajar sobre una página web con temática NFL que contiene formularios, botones y diferentes secciones.
 El objetivo es crear una hoja de estilos profesional, utilizando clases, ids, selectores avanzados y estilos reutilizables.
