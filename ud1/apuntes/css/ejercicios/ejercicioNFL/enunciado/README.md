@@ -17,8 +17,6 @@ Debéis enlazar un archivo styles.css desde vuestro HTML.
 
 Diseñad una clase general de botones (.btn) que se pueda reaplicar en toda la web.
 
-Añadid variaciones mediante clases secundarias (.primario, .secundario, .alerta, etc.).
-
 Cread una clase para inputs y formularios (.input-text, .form-control, etc.), para que los campos de formulario tengan un estilo uniforme.
 
 Aplicad pseudoclases como :hover, :focus y :checked.
@@ -69,3 +67,61 @@ La entrega debe incluir:
 ✔ Selectores por atributo (ej: [type="radio"])
 
 ✔ Pseudoclases
+
+<h2>PANTALLA JUGADORES</h2>
+Pantalla de Registro de Jugadores NFL
+
+Debes crear la pantalla “Registro de Jugadores NFL”, donde el usuario introducirá los datos de un nuevo jugador y los validará antes de registrarlo. El ejercicio incluye formularios, botones, validaciones y mensajes de estado.
+
+ ### Objetivos:
+
+Crear un formulario completo con varios tipos de campos.
+<ul>
+Implementar un botón Registrar que valide todos los datos.
+
+Implementar un botón Limpiar que restablezca todo el formulario.
+
+
+
+Aplicar estilos CSS utilizando clases reutilizables
+
+Campos obligatorios y validaciones:
+<ul>
+<li>Nombre del jugador</li>
+Tipo texto. Campo obligatorio. Debe tener un mínimo de 3 caracteres.
+
+<li>Edad</li>
+Tipo number. Campo obligatorio. Debe estar entre 18 y 45 años y ser un número entero.
+
+<li>Posición del jugador</li>
+Tipo select. Opciones: QB, RB, WR, TE, LB, DB. Es obligatorio seleccionar una opción válida.
+
+<li>Equipo actual</li>
+Tipo texto. Campo obligatorio. Mínimo 2 caracteres.
+
+<li>Peso del jugador</li>
+Tipo number. Campo obligatorio. Debe estar entre 60 y 160 kg. Se permiten decimales.
+
+<li>Tiempo en 40 yardas</li>
+Tipo number. Campo opcional. Debe estar entre 4.0 y 6.0 segundos.
+
+<li>Correo de contacto</li>
+Tipo email. Campo obligatorio. Debe tener un formato válido. 
+pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+
+<li>Comentarios o informe del jugador</li>
+Tipo textarea. Campo opcional. Máximo 300 caracteres.
+</ul>
+Botones:
+
+Registrar (type="submit"):
+Cuando el usuario pulse Registrar, se deben validar todos los campos.
+
+Si todas las validaciones son correctas, debe mostrarse un mensaje indicando “Jugador registrado correctamente”.
+
+
+Limpiar (type="reset"):
+Debe limpiar todos los campos, eliminar mensajes de error y eliminar el mensaje de registro correcto si existiera.
+
+Validaciones:
+Las validaciones pueden realizarse mediante atributos de HTML5 (required, min, max, pattern, maxlength)
