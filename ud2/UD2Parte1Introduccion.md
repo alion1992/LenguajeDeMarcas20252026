@@ -1,4 +1,6 @@
-<h1>UD2. INTRODUCCIÓN A LA PROGRAMACIÓN EN JAVASCRIPT</h1>
+<h1>UD2. Lenguajes de script de cliente para la manipulación de documentos web (JS).</h1>
+
+## Introducción JS Fundamentos del lenguaje
 
 ### ¿Qué es JavaScript?
 <p>JavaScript es un lenguaje de programación interpretado, orientado a objetos y ampliamente utilizado para dotar de interactividad y dinamismo a las páginas web.</p> <p>Forma parte del trío fundamental del desarrollo web front-end junto con HTML y CSS. Mientras que HTML estructura la información y CSS define el estilo visual, JavaScript permite manipular el contenido de forma dinámica, responder a eventos y comunicarse con servidores mediante peticiones asíncronas.</p> <p>Es un lenguaje esencial para el desarrollo web moderno, utilizado también en entornos de servidor gracias a tecnologías como Node.js.</p>
