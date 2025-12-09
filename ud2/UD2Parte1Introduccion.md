@@ -26,10 +26,101 @@ Podemos escribir JavaScript de dos formas:
 
 1. Dentro del propio archivo HTML
 
-```js
+```html
 <script>
   console.log("Hola desde JavaScript");
 </script>
 ```
+2. En un archivo JS externo
+```html
+<script src="app.js"></script>
+```
+Archivo app.js:
+
+```javascript
+console.log("Hola desde archivo externo");
+```
+Esta es la forma más profesional y modular de trabajar.
+
+### Estructura básica del proyecto
+
+```less
+mi-proyecto-js/
+│
+├── index.html           → Página principal
+├── css/
+│   └── estilos.css      → Estilos CSS opcionales
+└── js/
+    └── app.js           → Código JavaScript
+```
+
+### Conceptos fundamentales del lenguaje
+
+#### Variables
+
+```javascript
+let nombre = "Francisco";
+const PI = 3.1416;
+var edad = 20;
+```
+| Palabra clave | Característica                                  |
+| ------------- | ----------------------------------------------- |
+| `let`         | Variable de ámbito local o de bloque.           |
+| `const`       | No puede cambiar su valor.                      |
+| `var`         | Ámbito global o de función (menos recomendado). |
+
+
+#### Tipos de Datos
+```javascript
+let numero = 25;
+let texto = "Hola";
+let booleano = true;
+let indefinido;
+let nulo = null;
+let objeto = { nombre: "Ana", edad: 22 };
+let array = ["A", "B", "C"];
+```
+
+#### Operadores
+```javascript
+let suma = 10 + 20;
+let concatenacion = "Hola " + "Mundo";
+let comparacion = 5 === "5"; // false
+```
+
+### Estructuras de control
+
+#### Condicionales 
+ ```javascript
+if (edad >= 18) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor");
+}
+```
+#### Bucles
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log("Número:", i);
+}
+
+let j = 0;
+while (j < 3) {
+  console.log("While:", j);
+  j++;
+}
+```
+
+### Funciones
+```javascript
+function saludar(nombre) {
+  return "Hola " + nombre;
+}
+
+console.log(saludar("Fran"));
+```
+
+
+
 
 
