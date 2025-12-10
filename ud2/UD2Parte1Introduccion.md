@@ -120,6 +120,40 @@ function saludar(nombre) {
 console.log(saludar("Fran"));
 ```
 
+### Interacción con el Navegador
+
+En una página web puedes pedir datos al usuario con:
+
+#### prompt()
+
+Muestra una ventana emergente con un cuadro de texto.
+
+```javascript
+const nombre = prompt("Introduce tu nombre:");
+console.log("Hola " + nombre);
+```
+
+### confirm()
+
+Para preguntas de sí/no. Devuelve true o false.
+
+```javascript
+const seguro = confirm("¿Estás seguro?");
+console.log(seguro);
+```
+
+### alert()
+
+Muestra un mensaje en una pantalla emergente
+
+```javascript
+alert("Operación completada");
+```
+
+HEMOS LLEGADO HASTA AQUÍ ES HORA DE PRACTICAR
+
+[Ir a los ejercicios](ejercicios/Ejercicios.md)
+
 
 
 
