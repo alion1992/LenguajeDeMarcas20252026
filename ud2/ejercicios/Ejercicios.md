@@ -1,4 +1,5 @@
-1. Una tienda quiere saber el precio final de un producto después de aplicarle un porcentaje de descuento.
+### Ejercicio 1
+Una tienda quiere saber el precio final de un producto después de aplicarle un porcentaje de descuento.
 
 El programa debe preguntar al usuario:
 
@@ -13,7 +14,8 @@ El programa debe preguntar al usuario:
 - Precio de cuanto son impuestos.
 
 
-2. Una empresa quiere que desarrolles un programa que calcule el salario neto mensual de un trabajador a partir de su salario bruto, el porcentaje de IRPF y el porcentaje de Seguridad Social que debe pagar el empleado.
+### Ejercicio 2
+Una empresa quiere que desarrolles un programa que calcule el salario neto mensual de un trabajador a partir de su salario bruto, el porcentaje de IRPF y el porcentaje de Seguridad Social que debe pagar el empleado.
 
 El programa debe preguntar al usuario tres datos:
 
