@@ -74,3 +74,139 @@ let parrafo = document.getElementById("texto");
 let primero = document.querySelector(".mensaje");
 let todos = document.querySelectorAll(".mensaje");
 ```
+
+## 6. Acceso y modificación del contenido
+
+### 6.1 Texto del elemento
+
+Permite modificar el contenido de texto de un elemento HTML seleccionado.
+
+Modificar solo el texto del elemento:
+
+```javascript
+parrafo.textContent = "Texto modificado";
+```
+
+Modificar el contenido HTML del elemento:
+
+```javascript
+parrafo.innerHTML = "<strong>Texto en negrita</strong>";
+```
+
+Diferencias:
+- `textContent` inserta únicamente texto
+- `innerHTML` permite insertar etiquetas HTML
+
+---
+
+## 7. Modificación de atributos
+
+Los atributos HTML pueden leerse, modificarse, añadirse o eliminarse desde JavaScript.
+
+Ejemplo de elemento HTML:
+
+```html
+<img id="imagen" src="foto1.jpg">
+```
+
+Seleccionar el elemento:
+
+```javascript
+let img = document.getElementById("imagen");
+```
+
+Modificar un atributo existente:
+
+```javascript
+img.src = "foto2.jpg";
+```
+
+Añadir un atributo:
+
+```javascript
+img.setAttribute("alt", "Imagen de ejemplo");
+```
+
+Eliminar un atributo:
+
+```javascript
+img.removeAttribute("alt");
+```
+
+---
+
+## 8. Manipulación de clases CSS
+
+La manipulación de clases es la forma recomendada de modificar estilos desde JavaScript.
+
+Elemento HTML de ejemplo:
+
+```html
+<p id="aviso" class="rojo">Atención</p>
+```
+
+Añadir una clase:
+
+```javascript
+aviso.classList.add("grande");
+```
+
+Eliminar una clase:
+
+```javascript
+aviso.classList.remove("rojo");
+```
+
+Alternar una clase:
+
+```javascript
+aviso.classList.toggle("oculto");
+```
+
+---
+
+## 9. Modificación de estilos
+
+También se pueden modificar estilos CSS directamente desde JavaScript.
+
+```javascript
+aviso.style.color = "blue";
+aviso.style.fontSize = "20px";
+```
+
+Notas:
+- Los estilos se escriben en formato camelCase
+- Es preferible usar clases CSS siempre que sea posible
+
+---
+
+## 10. Creación de elementos
+
+JavaScript permite crear elementos HTML de forma dinámica.
+
+Ejemplo de creación e inserción de un elemento:
+
+```javascript
+let nuevoParrafo = document.createElement("p");
+nuevoParrafo.textContent = "Nuevo párrafo creado desde JavaScript";
+
+document.body.appendChild(nuevoParrafo);
+```
+
+---
+
+## 11. Eliminación de elementos
+
+Eliminar un elemento directamente:
+
+```javascript
+nuevoParrafo.remove();
+```
+
+Eliminar un elemento desde su elemento padre:
+
+```javascript
+document.body.removeChild(nuevoParrafo);
+```
+
+---
