@@ -6,19 +6,24 @@
     <title>Primera clase de JS</title>
 </head>
 <body>
-    
+    <input type="text" id="nombre" value="Francisco">
 </body>
+    <!--<script src="js/appModulos.js"></script>-->
+
     <script>
-        console.log("Hola chicos de DAW")
-        let nombre = "Francisco"
-        let apellido1 = "Alia"
-        let apellido2 = "Hernandez"
-        //alert("Buenas a todos")
-        console.log("Este va después")
-        let n1 = 33
-        let n2 = 33
-        var total = n1 + n2
-        console.log('El total de la operacion es: '+total)
+        
+
+        function init(){
+            let nombre = 'Daniel'
+            document.getElementById('nombre').value = nombre
+            
+        }
+
+       init()
+        
+
     </script>
+        
+    
 
 </html>
