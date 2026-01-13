@@ -44,12 +44,13 @@ function init2(){
 function registrar(){
     let mensaje = ''
     if (document.getElementById('nombre').value.length < 3 || document.getElementById('nombre').value.length > 30){
-        mensaje = mensaje + ' el campo nombre no puede tener una longitud menor de 3 y menor de 30 caracteres'
+        mensaje = mensaje + ' <p><strong>El nombre: </strong>el campo nombre no puede tener una longitud menor de 3 y menor de 30 caracteres</p>'
     } if(document.getElementById('edad').value < 18 ) {
-        mensaje = mensaje + ' eres menor de edad'
+        mensaje = mensaje + ' <p><strong>Edad: </strong>eres menor de edad<p>'
     } 
     if (mensaje.length > 0){
-        alert(mensaje)
+        let mensajeError = document.getElementById("mensajeError")
+        mensajeError.innerHTML = mensaje
     } else {
        window.location.href = "registrar.html"
     }
@@ -57,5 +58,9 @@ function registrar(){
 
 
 function cambiarEstilo(){
-    
+    alert('ESTO FUNCIONA')
+}
+
+function cambiarEstiloValladolid(){
+    alert('El de valladolid')
 }
