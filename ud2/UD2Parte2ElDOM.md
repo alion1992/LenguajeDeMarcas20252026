@@ -73,6 +73,10 @@ let parrafo = document.getElementById("texto");
 ```javascript
 let primero = document.querySelector(".mensaje");
 let todos = document.querySelectorAll(".mensaje");
+
+primero.classList.add("destacado");
+primero.classList.remove("mensaje");
+primero.classList.toggle("oculto");
 ```
 
 ## 6. Acceso y modificación del contenido

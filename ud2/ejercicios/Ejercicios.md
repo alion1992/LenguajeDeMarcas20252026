@@ -1,11 +1,12 @@
 ### Ejercicio 1
+
 Una tienda quiere saber el precio final de un producto después de aplicarle un porcentaje de descuento.
 
 El programa debe preguntar al usuario:
 
 - Precio original del producto
 
-- Porcentaje de descuento (por ejemplo, 15 para un 15 %) 
+- Porcentaje de descuento (por ejemplo, 15 para un 15 %)
 
 <strong>Resultado final que deben mostrar</strong>
 
@@ -13,8 +14,8 @@ El programa debe preguntar al usuario:
 
 - Precio de cuanto son impuestos.
 
-
 ### Ejercicio 2
+
 Una empresa quiere que desarrolles un programa que calcule el salario neto mensual de un trabajador a partir de su salario bruto, el porcentaje de IRPF y el porcentaje de Seguridad Social que debe pagar el empleado.
 
 El programa debe preguntar al usuario tres datos:
@@ -38,3 +39,31 @@ El importe descontado por IRPF
 El importe descontado por Seguridad Social
 
 El salario neto final
+
+### Ejercicio 3
+
+Una tienda aplica descuentos de fidelidad según el número de años que el cliente lleva registrado.
+
+El programa deberá preguntar al usuario:
+
+Precio de la compra
+
+Años como cliente (Si se introducen años negativos se deberá volver a preguntar)
+
+Los descuentos son los siguientes:
+
+- Menos de un año -> 1%
+
+- Entre 1 y 3 años -> 5%
+
+- Más de 3 años -> 10%
+
+<strong>Resultado final que debe mostrar el programa:</strong>
+
+- Precio original
+
+- Porcentaje de descuento aplicado
+
+- Importe del descuento
+
+- Precio final
