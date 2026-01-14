@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Las Razas de la Tierra Media</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+<body>
+     <div class="layout">
+
+        
+        <nav class="menu-lateral">
+            <h2>Menú</h2>
+            <ul>
+                <li>
+                    <button id="btnInicio" onclick="inicio()">Inicio</button>
+                    <button id="btnCambiarModo">Cambiar Modo Oscuro</button>
+                </li>
+            </ul>
+        </nav>
+
+        
+        <div class="contenido">
+
+            <header class="cabecera">
+                <div id="cabecera" class="overlay">
+                  
+                </div>
+            </header>
+
+            <main>
+               <h2 style="text-align: center; margin-bottom: 20px;">Crear nueva raza</h2>
+
+    <form id="formRaza">
+        <table class="tabla-formulario">
+            <tr>
+                <td><label for="nombre">Nombre de la raza</label></td>
+                <td>
+                    <input type="text" id="nombre" name="nombre">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="descripcion">Descripción</label></td>
+                <td>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="habitat">Hábitat</label></td>
+                <td>
+                    <input type="text" id="habitat" name="habitat">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="longevidad">Longevidad</label></td>
+                <td>
+                    <input type="number" id="longevidad" name="longevidad">
+                </td>
+            </tr>
+
+             <tr>
+        <td><label for="poder">Poder</label></td>
+        <td>
+            <select id="alineamiento" name="alineamiento">
+                <option value="">-- Selecciona una opción --</option>
+                <option value="bajo">Bajo</option>
+                <option value="medio">Medio</option>
+                <option value="alto">Alto</option>
+            </select>
+        </td>
+    </tr>
+
+    
+    <tr>
+    <td><label>Propiedades</label></td>
+    <td>
+        <label>
+            <input type="checkbox" name="propiedades[]" value="inmortal">
+            Inmortal
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="propiedades[]" value="magico">
+            Mágico
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="propiedades[]" value="cuerpoACuerpo">
+            Cuerpo a Cuerpo
+        </label>
+    </td>
+</tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" id="btnCrear" value="Crear">
+                    <input type="button" value="Limpiar" id="btnLimpiar">
+                </td>
+            </tr>
+        </table>
+        <p id="mensajeError"></p>
+    </form>         
+    </main>
+     <footer>
+                <p>Lenguaje de Marcas - JavaScript DOM - FP DAW / DAM</p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+<script src="../js/app.js"></script>
+</html>

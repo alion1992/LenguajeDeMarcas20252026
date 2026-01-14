@@ -65,7 +65,7 @@ main {
 
 .raza {
     background-color: #fff;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -90,4 +90,49 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+
+.menu-lateral {
+    width: 220px;
+    background-color: #b2b5bb;
+    color: #0c0b0b;
+    padding: 20px;
+}
+
+.menu-lateral h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral li {
+    margin-bottom: 10px;
+}
+
+.menu-lateral button {
+    width: 100%;
+    padding: 10px;
+    background-color: #aca4a4;
+    color: #070505;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.menu-lateral button:hover {
+    background-color: #5a5a5a;
+}
+
+.contenido {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
 }
