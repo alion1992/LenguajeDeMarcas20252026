@@ -33,12 +33,14 @@
 ### Formulario de crear razas
 
 <p>Actualmente no se realizar validaciones a la hora de registrar una raza en nuestro sistema, las validaciones de los campos son las siguientes.</p>
-- Los campos de tipo text deben tener una longitud entre 3 y 20 caractes</p>
-- Los campos de textarea deben tener entre 20 y 150 caracteres
-- Longevidad debe tener mínimo 20 años
-- Un poder seleccionado mínimo
-- Una propiedad mínimo
-- Si la raza tiene una longevidad superior a 2000 años y no esta marcado inmortal se debe dar una mensaje de error.
+
+<p>Los campos de tipo text deben tener una longitud entre 3 y 20 caractes</p>
+<p>Los campos de textarea deben tener entre 20 y 150 caracteres</p>
+<p>Longevidad debe tener mínimo 20 años</p>
+<p>Un poder seleccionado mínimo</p>
+<p>Una propiedad mínimo</p>
+<p>Si la raza tiene una longevidad superior a 2000 años y no esta marcado inmortal se debe dar una mensaje de error.</p>
+
 Cuando se de al botón crear se debe mostrar un mensaje informativo de todas y cada una de las validaciones que han fallado. Con unos estilos para el modo claro y otros estilos ajustados al modo oscuro.
 
 ## Rúbrica de corrección
