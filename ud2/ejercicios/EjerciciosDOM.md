@@ -1,3 +1,12 @@
+### Ejercicio 0 
+   Partiendo desde un HTML vacío hay que crear los siguientes elementos dinámicamente.
+-  3 p dinámicamente con un texto diferente en cada uno y añadirlos al body.
+- Añadir la clase destacado a los 3 p
+- Quitar la clase destacado el tercer p
+- Modificar el texto del primer p
+- Modificar directamente el estilo del 1º p para que el tamaño de fuente sea 40px
+- Crear una etiqueta imagen dinámicamente y añadirle un texto alternativo
+
 ### Ejercicio 1
 
 Se desa crear una página web que implemente un contador cuyo valor inicial sea 0.
