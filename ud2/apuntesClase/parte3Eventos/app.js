@@ -12,12 +12,12 @@ btnEvento.addEventListener("click", function(){
     }
 });*/
 
-nombreSenor.addEventListener("keydown", function(event){
+/*nombreSenor.addEventListener("keydown", function(event){
     if(event.key === "Tab"){
        event.preventDefault();
        nombre.focus()
     }
-})
+})*/
 
 nombre.addEventListener("change", function(){
     if (nombre.value == ''){
@@ -40,6 +40,15 @@ document.addEventListener("keydown", function(event){
         console.log("HAS PULSADO LA TECLA ENTER")
     }
 })
+
+
+nombreSenor.addEventListener("keydown", function(event){
+    if (event.key == "Tab"){
+        event.preventDefault()
+        nombre.focus()
+    }
+})
+
 
 
 
