@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Productos</title>
+    <link rel="stylesheet" href="estilos_almacen.css">
+</head>
+<body>
+
+<h1> Registro de Productos en el Almacén</h1>
+
+<form id="formAlmacen">
+
+    <label>
+        Nombre del producto:
+        <input type="text" id="producto">
+    </label>
+
+    <label>
+        Proveedor:
+        <input type="text" id="proveedor">
+    </label>
+
+    <label>
+        Cantidad:
+        <input type="number" id="cantidad">
+    </label>
+
+    <label>
+        Precio (€):
+        <input type="number" id="precio" step="0.01">
+    </label>
+
+    <label>
+        Tipo de producto:
+        <select id="tipo">
+            <option value="Electronico">Electrónico</option>
+            <option value="Inflamable">Inflamable</option>
+            <option value="Perecedero">Perecedero</option>
+            <option value="Textil">Textil</option>
+        </select>
+    </label>
+
+    <label>Prioridad de almacenamiento:</label>
+    <div>
+        <label><input type="radio" name="prioridad" value="Alta" checked> Alta</label>
+        <label><input type="radio" name="prioridad" value="Media"> Media</label>
+        <label><input type="radio" name="prioridad" value="Baja"> Baja</label>
+    </div>
+
+    <label>
+        Método de transporte:
+        <select id="transporte">
+            <option value="Estandar">Estándar</option>
+            <option value="Refrigerado">Refrigerado</option>
+            <option value="Urgente">Urgente</option>
+        </select>
+    </label>
+
+    <label>
+        Ubicación del almacén:
+        <select id="ubicacion">
+            <option value="Zona General">Zona General</option>
+            <option value="Zona Refrigerada">Zona Refrigerada</option>
+            <option value="Zona Seguridad">Zona de Seguridad</option>
+        </select>
+    </label>
+
+    <button type="submit">Registrar producto</button>
+
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Proveedor</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Tipo</th>
+            <th>Prioridad</th>
+            <th>Transporte</th>
+            <th>Ubicación</th>
+        </tr>
+    </thead>
+
+    <tbody id="tablaProductos"></tbody>
+
+</table>
+
+<script src="app.js"></script>
+
+</body>
+</html>

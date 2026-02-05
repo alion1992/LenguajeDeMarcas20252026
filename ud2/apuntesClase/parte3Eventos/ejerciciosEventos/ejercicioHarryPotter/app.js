@@ -1,5 +1,9 @@
 const form = document.getElementById("formHogwarts");
-    const tabla = document.getElementById("tablaAlumnos");
+const tabla = document.getElementById("tablaAlumnos");
+let btnOcultarMostrar = document.getElementById("btnOcultarMostrar");
+let labelRegistro = document.getElementById("labelRegistro")
+let inputRegistro = document.getElementById("registroArea")
+let contador = 0
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -27,3 +31,16 @@ const form = document.getElementById("formHogwarts");
 
         form.reset();
     });
+
+btnOcultarMostrar.addEventListener("click",function(){
+    /*if (labelRegistro.style.display =="" || labelRegistro.style.display == "block"){
+        labelRegistro.style.display = "none" // block
+        btnOcultarMostrar.value = "Mostrar Campo"
+    } else {
+        labelRegistro.style.display = "block" // block
+        btnOcultarMostrar.value = "Ocultar Campo"
+    }*/
+    inputRegistro.value = inputRegistro.value + contador+"\n"
+    contador++;
+})
+    
