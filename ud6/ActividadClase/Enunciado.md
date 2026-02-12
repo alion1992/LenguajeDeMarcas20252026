@@ -1,145 +1,143 @@
-## Actividad práctica: Puesta en marcha de un ERP con Odoo
+# ACTIVIDAD PRÁCTICA: DISEÑO Y CONFIGURACIÓN DE UNA TIENDA EN ODOO
 
-### Objetivo
-Configurar un entorno ERP funcional utilizando los módulos principales de Odoo, comprendiendo la integración entre clientes, productos, ventas e inventario dentro de un contexto empresarial real.
-
-### Contexto profesional
-El alumnado actuará como parte del departamento de sistemas de una pequeña empresa que necesita implantar un ERP para digitalizar sus procesos comerciales y mejorar la gestión de clientes.
-
-### Duración
-40–45 minutos
+## 1. Contexto de la actividad
+En esta actividad el alumnado deberá **instalar, configurar y explotar un sistema ERP**, utilizando Odoo como aplicación de gestión empresarial, simulando una empresa real que vende productos a través de una tienda online y gestiona empleados, reuniones y vacaciones.
 
 ---
 
-## Actividad 1: Instalación de módulos principales
-**Descripción:**  
-Accede a tu instancia de Odoo e instala los módulos necesarios para la gestión básica de la empresa.
+## 2. Objetivo general
+Diseñar y configurar una **empresa completa en Odoo**, incluyendo:
+- Tienda online con identidad visual
+- Productos y categorías
+- Empleados y departamentos
+- Gestión de reuniones
+- Gestión de vacaciones
+- Edición del sitio web corporativo
 
-**Módulos a instalar:**
-- Contactos (Clientes)
+---
+
+## 3. Requisitos técnicos obligatorios
+
+### 3.1 Módulos de Odoo a instalar
+El alumnado deberá instalar y utilizar, como mínimo, los siguientes módulos:
+
 - Ventas
 - Inventario
-
-**Evidencias obligatorias:**
-- Captura de pantalla donde se vean los módulos instalados.
-- Captura del panel principal con los módulos visibles.
-
----
-
-## Actividad 2: Configuración del módulo de clientes
-**Descripción:**  
-Configura el módulo de Contactos creando la base de datos inicial de clientes de la empresa.
-
-**Tareas:**
-1. Crear un cliente tipo empresa con los siguientes datos:
-   - Nombre de la empresa  
-   - Persona de contacto  
-   - Email  
-   - Teléfono  
-   - Dirección  
-
-2. Crear un segundo cliente (puede ser empresa o particular).
-
-**Evidencias obligatorias:**
-- Captura de la ficha completa del primer cliente.
-- Captura del listado donde aparezcan ambos clientes.
+- Sitio Web
+- Comercio electrónico
+- Empleados
+- Tiempo libre (Vacaciones)
+- Calendario
+- Contactos
 
 ---
 
-## Actividad 3: Creación de productos
-**Descripción:**  
-Da de alta los productos que la empresa va a comercializar.
+## 4. Desarrollo de la actividad
 
-**Tareas:**
-Crear al menos **dos productos** con la siguiente información:
+### 4.1 Diseño de la tienda
+El alumnado deberá:
 
-- Nombre del producto  
-- Tipo de producto  
-- Precio de venta  
-- Coste  
-- Stock inicial  
-
-**Evidencias obligatorias:**
-- Captura de la ficha de cada producto.
-- Captura del inventario donde se observe el stock.
+- Crear una empresa con nombre propio
+- Diseñar un **logotipo corporativo**
+- Configurar los datos básicos de la empresa
 
 ---
 
-## Actividad 4: Proceso completo de venta
-**Descripción:**  
-Simula un proceso real de venta utilizando los datos creados anteriormente.
+### 4.2 Gestión de productos
+Se deberán crear:
 
-**Tareas:**
-1. Crear un presupuesto para uno de los clientes.
-2. Añadir los productos al presupuesto.
-3. Confirmar la venta.
-4. Verificar el movimiento de stock generado automáticamente.
+- **Mínimo 5 productos**
+- Cada producto debe tener:
+  - Nombre
+  - Precio
+  - Imagen
+  - Categoría asignada
+- **Mínimo 2 categorías diferentes**
 
-**Evidencias obligatorias:**
-- Captura del presupuesto creado.
-- Captura de la venta confirmada.
-- Captura del movimiento de inventario.
+Los productos deberán aparecer visibles en la tienda online.
 
 ---
 
-## Actividad 5: Análisis de la integración del ERP
-**Descripción:**  
-Reflexiona sobre el funcionamiento del sistema tras completar el proceso de venta.
+### 4.3 Gestión de empleados y departamentos
+Se deberán crear:
 
-**Responde brevemente:**
-- ¿Qué módulos han intervenido en el proceso?
-- ¿Qué ventajas tiene utilizar un ERP frente a herramientas aisladas?
-- ¿Por qué es importante que los departamentos estén conectados?
-
-**Evidencias obligatorias:**
-- Documento breve (5–10 líneas) con las respuestas.
+- **4 empleados**
+- **2 departamentos diferentes**
+- Cada empleado deberá estar correctamente asignado a un departamento
 
 ---
 
-## Entrega de la actividad
-Se debe subir todas las evidencias organizadas en un único documento o carpeta con el nombre:
+### 4.4 Gestión de reuniones
+Se deberán registrar:
 
-**ERP_Odoo_NombreApellido**
+- **Mínimo 4 reuniones**
+- Cada reunión deberá incluir:
+  - Fecha y hora
+  - Participantes
+  - Descripción
+
+Las reuniones deben visualizarse en el calendario.
 
 ---
 
-## Evaluación de la tarea
+### 4.5 Gestión de vacaciones
+Se deberán configurar vacaciones de empleados:
 
-Se evaluarán los siguientes Criterios de evaluación
+- **Un periodo vacacional de 10 días APROBADO**
+- **Un periodo vacacional de 5 días PENDIENTE de aprobación**
 
-RA7. Opera sistemas empresariales de gestión de información realizando tareas
-de importación, integración, aseguramiento y extracción de la información.
+Debe verse claramente el estado de cada solicitud.
 
+---
 
-a) Se han identificado los principales sistemas de gestión empresarial. 
-b) Se han reconocido las ventajas de los sistemas de gestión de información
-empresariales.
-c) Se han evaluado las características de las principales aplicaciones de
-gestión empresarial.
-d) Se han instalado aplicaciones de gestión de la información empresarial.
-e) Se han configurado y administrado las aplicaciones.
-f) Se han establecido y verificado mecanismos de acceso seguro a la
-información.
-g) Se han generado informes.
-h) Se han realizado procedimientos de extracción de información para su
-tratamiento e incorporación a diversos sistemas.
-i) Se han elaborado documentos relativos a la explotación de la aplicación.
+### 4.6 Sitio web corporativo
+El alumnado deberá editar el sitio web e incluir, como mínimo:
 
-```code
-El 20% será evaluado en las actividades.
-```
+- Página principal personalizada
+- Página de contacto
+- Información básica de la empresa
+- Enlaces funcionales
 
-## Rúbrica de evaluación – Actividad práctica: Puesta en marcha de un ERP con Odoo
+---
 
-| Criterio de evaluación | Excelente (4) | Notable (3) | Básico (2) | Insuficiente (1) |
-|------------------------|---------------|--------------|--------------|------------------|
-| **Instalación de módulos** | Instala todos los módulos correctamente y sin ayuda, demostrando autonomía. | Instala los módulos con alguna duda puntual. | Instala los módulos con ayuda frecuente. | No logra instalar los módulos o presenta errores graves. |
-| **Configuración del módulo de clientes** | Crea los clientes con todos los datos correctamente estructurados y comprende su utilidad empresarial. | Crea los clientes con datos suficientes, aunque con pequeños errores. | Crea los clientes pero faltan datos relevantes. | No crea los clientes o están incorrectamente configurados. |
-| **Creación de productos** | Da de alta los productos con todos los campos clave y configura correctamente el stock. | Crea los productos con información adecuada pero mejorable. | Crea los productos con información incompleta. | No crea los productos o lo hace incorrectamente. |
-| **Proceso de venta** | Completa todo el flujo (presupuesto → confirmación → movimiento de stock) comprendiendo la integración del ERP. | Completa el proceso con algún error menor. | Completa el proceso parcialmente. | No logra completar el proceso de venta. |
-| **Comprensión de la integración de módulos** | Explica claramente cómo se relacionan clientes, ventas e inventario. | Identifica la relación entre algunos módulos. | Muestra una comprensión superficial. | No comprende la integración del sistema. |
-| **Entrega de evidencias** | Presenta todas las evidencias bien organizadas y con claridad profesional. | Presenta las evidencias correctamente. | Faltan algunas evidencias o están desordenadas. | No entrega evidencias o son incorrectas. |
+## 5. Entregables
+El alumnado deberá entregar:
 
-## Entrega
+1. Documento PDF con:
+   - Capturas de pantalla justificativas de cada apartado
+   - Explicación breve de los módulos utilizados
+2. Exportación de:
+   - Lista de productos
+   - Lista de empleados
+3. Breve memoria final (1–2 páginas) explicando:
+   - Qué es un ERP
+   - Ventajas del uso de Odoo en una empresa
 
-La entraga del documento debe ser entregado en formato .pdf antes del día 15 de Febrero de 2026 a las 23:59 en el aula virtual.
+---
+
+## 6. RÚBRICA DE EVALUACIÓN (CRITERIOS DE EVALUACIÓN)
+
+| CE | Descripción | Nivel Excelente (10–9) | Nivel Adecuado (8–6) | Nivel Básico (5–4) | Insuficiente (<4) |
+|----|-------------|------------------------|----------------------|-------------------|------------------|
+| a | Identificación de sistemas ERP | Identifica y contextualiza correctamente los sistemas ERP | Identifica los principales ERP | Identificación superficial | No identifica |
+| b | Ventajas de los sistemas ERP | Explica ventajas con ejemplos reales | Enumera ventajas correctamente | Ventajas poco claras | No reconoce ventajas |
+| c | Evaluación de aplicaciones | Analiza Odoo frente a otros ERP | Describe características de Odoo | Descripción incompleta | No evalúa |
+| d | Instalación de aplicaciones | Instala todos los módulos requeridos sin errores | Instala la mayoría correctamente | Errores leves | No instala |
+| e | Configuración y administración | Configuración completa y coherente | Configuración funcional | Configuración parcial | No configura |
+| f | Acceso seguro a la información | Roles y accesos bien definidos | Accesos básicos configurados | Configuración mínima | No configura |
+| g | Generación de informes | Genera y explica informes correctamente | Genera informes simples | Informes incompletos | No genera |
+| h | Extracción de información | Exporta datos y los reutiliza | Exporta datos correctamente | Exportación limitada | No exporta |
+| i | Documentación de explotación | Memoria clara, bien estructurada | Memoria correcta | Memoria superficial | No documenta |
+
+---
+
+## 7. Observaciones
+- Se valorará especialmente la **coherencia del conjunto**
+- No se permite reutilizar datos de ejemplo sin adaptación
+- El trabajo debe reflejar un **uso realista de un ERP empresarial**
+
+---
+
+**Fecha de entrega:** 19/02/2026  
+**Formato:** PDF + capturas  
+**Trabajo individual**
