@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Hogwarts</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1>Formulario de Registro en Hogwarts 🧙‍♀️</h1>
+
+<form id="registros">
+     <label id ="labelRegistro">
+        Números de registros de alumnos:
+        <textarea  id="registroArea"></textarea>
+    </label>
+    <input type="button" id="btnOcultarMostrar" value="Ocultar Campo">
+
+</form>
+
+
+<form id="formHogwarts">
+    <label>
+        Nombre del alumno:
+        <input type="text" id="nombre" required>
+    </label>
+
+    <label>
+        Apellidos:
+        <input type="text" id="apellidos" required>
+    </label>
+
+    <label>
+        Edad:
+        <input type="number" id="edad" min="11" max="18" >
+    </label>
+
+    <label>
+        Casa de Hogwarts:
+        <select id="casa">
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+        </select>
+    </label>
+
+    <label>
+        Tipo de sangre:
+        <select id="sangre">
+            <option value="Pura">Sangre pura</option>
+            <option value="Mestiza">Mestiza</option>
+            <option value="Muggle">Hijo de muggles</option>
+        </select>
+    </label>
+
+    <label>Asignatura favorita:</label>
+    <div class="inline">
+        <label><input type="radio" name="asignatura" value="Pociones" checked> Pociones</label>
+        <label><input type="radio" name="asignatura" value="Defensa"> Defensa</label>
+        <label><input type="radio" name="asignatura" value="Encantamientos"> Encantamientos</label>
+    </div>
+
+    <label>
+        Mascota:
+        <select id="mascota">
+            <option value="Lechuza">Lechuza</option>
+            <option value="Gato">Gato</option>
+            <option value="Sapo">Sapo</option>
+            <option value="Ninguna">Ninguna</option>
+        </select>
+    </label>
+
+    <label>
+        Comentarios adicionales:
+        <textarea id="comentarios"></textarea>
+    </label>
+
+    <button type="submit">Registrar alumno</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Casa</th>
+            <th>Sangre</th>
+            <th>Asignatura</th>
+            <th>Mascota</th>
+        </tr>
+    </thead>
+    <tbody id="tablaAlumnos">
+       
+    </tbody>
+</table>
+
+</body>
+<script src="app.js"></script>
+</html>
