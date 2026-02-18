@@ -1,92 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Las Razas de la Tierra Media</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
-    
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <div class="layout">
+      <nav class="menu-lateral">
+        <h2>Menú</h2>
+        <ul>
+          <li>
+            <button id="btnCrearRaza" onclick="raza()">Crear raza</button>
+            <button id="btnCambiarModo" onclick="darkMode()">
+              Cambiar Modo Oscuro
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-        
-        <nav class="menu-lateral">
-            <h2>Menú</h2>
-            <ul>
-                <li>
-                    <button id="btnCrearRaza" onclick="raza()">Crear raza</button>
-                    <button id="btnCambiarModo">Cambiar Modo Oscuro</button>
-                </li>
-            </ul>
-        </nav>
+      <div class="contenido">
+        <header class="cabecera">
+          <div id="cabecera" class="overlay"></div>
+        </header>
 
-        
-        <div class="contenido">
+        <main>
+          <section class="introduccion claroOscuro claro">
+            <h2>Introducción</h2>
+            <p>
+              En la Tierra Media conviven distintas razas, cada una con sus
+              propias características, historia y cultura. En esta página
+              conoceremos algunas de las más importantes.
+            </p>
+          </section>
+          <h2>Razas</h2>
+          <section class="razas">
+            <article class="raza claroOscuro claro" id="elfos">
+              <h3>Elfos</h3>
+              <img src="img/elfos.jpg" alt="Elfos de la Tierra Media" />
+              <p>
+                Los elfos son seres inmortales, sabios y de gran belleza. Viven
+                en armonía con la naturaleza y destacan por su habilidad en el
+                combate y la magia.
+              </p>
+            </article>
 
-            <header class="cabecera">
-                <div id="cabecera" class="overlay">
-                  
-                </div>
-            </header>
+            <article class="raza" id="enanos">
+              <h3>Enanos</h3>
+              <img src="img/enanos.jpg" alt="Enanos de la Tierra Media" />
+              <p>
+                Los enanos son robustos y resistentes. Grandes artesanos y
+                mineros, valoran el honor, la lealtad y la riqueza de las
+                montañas.
+              </p>
+            </article>
 
-            <main>
-                <section class="introduccion">
-                    <h2>Introducción</h2>
-                    <p>
-                        En la Tierra Media conviven distintas razas, cada una con sus propias
-                        características, historia y cultura. En esta página conoceremos algunas
-                        de las más importantes.
-                    </p>
-                </section>
-                <h2>Razas</h2>  
-                <section class="razas">
-                       
-                    <article class="raza" id="elfos">
-                        <h3>Elfos</h3>
-                        <img src="img/elfos.jpg" alt="Elfos de la Tierra Media">
-                        <p>
-                            Los elfos son seres inmortales, sabios y de gran belleza. Viven en armonía
-                            con la naturaleza y destacan por su habilidad en el combate y la magia.
-                        </p>
-                    </article>
+            <article class="raza" id="hombres">
+              <h3>Hombres</h3>
+              <img src="img/hombres.jpg" alt="Hombres de la Tierra Media" />
+              <p>
+                Los hombres son la raza más diversa. Aunque mortales, han
+                protagonizado grandes gestas y reinos a lo largo de la historia
+                de la Tierra Media.
+              </p>
+            </article>
 
-                    <article class="raza" id="enanos">
-                        <h3>Enanos</h3>
-                        <img src="img/enanos.jpg" alt="Enanos de la Tierra Media">
-                        <p>
-                            Los enanos son robustos y resistentes. Grandes artesanos y mineros,
-                            valoran el honor, la lealtad y la riqueza de las montañas.
-                        </p>
-                    </article>
+            <article class="raza" id="hobbits">
+              <h3>Hobbits</h3>
+              <img src="img/hobbits.jpg" alt="Hobbits de la Tierra Media" />
+              <p>
+                Los hobbits son pequeños, tranquilos y amantes de la buena
+                comida. Aunque no buscan aventuras, han demostrado un gran
+                valor.
+              </p>
+            </article>
+          </section>
+        </main>
 
-                    <article class="raza" id="hombres">
-                        <h3>Hombres</h3>
-                        <img src="img/hombres.jpg" alt="Hombres de la Tierra Media">
-                        <p>
-                            Los hombres son la raza más diversa. Aunque mortales, han protagonizado
-                            grandes gestas y reinos a lo largo de la historia de la Tierra Media.
-                        </p>
-                    </article>
-
-                    <article class="raza" id="hobbits">
-                        <h3>Hobbits</h3>
-                        <img src="img/hobbits.jpg" alt="Hobbits de la Tierra Media">
-                        <p>
-                            Los hobbits son pequeños, tranquilos y amantes de la buena comida.
-                            Aunque no buscan aventuras, han demostrado un gran valor.
-                        </p>
-                    </article>
-                </section>
-            </main>
-
-            <footer>
-                <p>Lenguaje de Marcas - JavaScript DOM - FP DAW / DAM</p>
-            </footer>
-
-        </div>
+        <footer>
+          <p>Lenguaje de Marcas - JavaScript DOM - FP DAW / DAM</p>
+        </footer>
+      </div>
     </div>
-
-</body>
-<script src="js/app.js"></script>
+  </body>
+  <script src="js/app.js"></script>
 </html>

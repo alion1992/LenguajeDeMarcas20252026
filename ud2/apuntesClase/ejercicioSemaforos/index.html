@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semáforo interactivo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Semáforo interactivo</h1>
+
+    <div id="semaforo" aria-label="Semáforo">
+      <div id="rojo" class="luz" aria-label="Luz roja"></div>
+      <div id="amarillo" class="luz" aria-label="Luz amarilla"></div>
+      <div id="verde" class="luz" aria-label="Luz verde"></div>
+    </div>
+
+    <div class="controles">
+      <button id="btnRojo" type="button">Rojo</button>
+      <button id="btnAmarillo" type="button">Amarillo</button>
+      <button id="btnVerde" type="button">Verde</button>
+    </div>
+
+    <p id="mensaje">Estado: -</p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
