@@ -1,143 +1,154 @@
-# ACTIVIDAD PRÁCTICA: DISEÑO Y CONFIGURACIÓN DE UNA TIENDA EN ODOO
+# ACTIVIDAD PRÁCTICA: IMPLANTACIÓN DE UNA EMPRESA CON ODOO
 
 ## 1. Contexto de la actividad
-En esta actividad el alumnado deberá **instalar, configurar y explotar un sistema ERP**, utilizando Odoo como aplicación de gestión empresarial, simulando una empresa real que vende productos a través de una tienda online y gestiona empleados, reuniones y vacaciones.
+Se deberá implantar y configurar un sistema ERP utilizando Odoo para simular el funcionamiento real de una empresa. Cada estudiante creará una empresa y una tienda online de temática libre, configurando los módulos vistos en clase para gestionar productos, empleados, ausencias, sitio web y ventas.
+
+La actividad debe reflejar un uso realista del ERP como herramienta de gestión empresarial.
 
 ---
 
 ## 2. Objetivo general
-Diseñar y configurar una **empresa completa en Odoo**, incluyendo:
-- Tienda online con identidad visual
-- Productos y categorías
-- Empleados y departamentos
-- Gestión de reuniones
-- Gestión de vacaciones
-- Edición del sitio web corporativo
+Diseñar, configurar y explotar una empresa completa en Odoo que incluya:
+
+- Tienda online funcional  
+- Gestión de productos y categorías  
+- Gestión de empleados y ausencias  
+- Sitio web corporativo con información real  
+- Registro de ventas  
+- Uso integrado de los módulos estudiados  
 
 ---
 
 ## 3. Requisitos técnicos obligatorios
 
-### 3.1 Módulos de Odoo a instalar
-El alumnado deberá instalar y utilizar, como mínimo, los siguientes módulos:
+Se deberán instalar y utilizar los módulos trabajados en clase que permitan cubrir la gestión completa de la empresa, incluyendo como mínimo:
 
-- Ventas
-- Inventario
-- Sitio Web
-- Comercio electrónico
-- Empleados
-- Tiempo libre (Vacaciones)
-- Calendario
-- Contactos
+- Ventas  
+- Inventario  
+- Sitio Web  
+- Comercio electrónico  
+- Empleados  
+- Tiempo libre (ausencias)  
+- Calendario  
+- Contactos  
 
 ---
 
 ## 4. Desarrollo de la actividad
 
-### 4.1 Diseño de la tienda
-El alumnado deberá:
+### 4.1 Creación de la empresa y tienda
+Se deberá:
 
-- Crear una empresa con nombre propio
-- Diseñar un **logotipo corporativo**
-- Configurar los datos básicos de la empresa
+- Crear una empresa con nombre propio  
+- Diseñar una tienda online con temática libre  
+- Configurar los datos básicos de la empresa  
+- Incorporar logotipo e identidad visual  
 
 ---
 
 ### 4.2 Gestión de productos
 Se deberán crear:
 
-- **Mínimo 5 productos**
-- Cada producto debe tener:
-  - Nombre
-  - Precio
-  - Imagen
-  - Categoría asignada
-- **Mínimo 2 categorías diferentes**
+- Mínimo 6 productos  
+- Mínimo 2 categorías diferentes  
 
-Los productos deberán aparecer visibles en la tienda online.
+Cada producto deberá incluir:
+
+- Nombre  
+- Precio  
+- Imagen  
+- Categoría asignada  
+- Disponibilidad en la tienda online  
+
+Los productos deberán visualizarse correctamente en la tienda.
 
 ---
 
-### 4.3 Gestión de empleados y departamentos
+### 4.3 Gestión de empleados
 Se deberán crear:
 
-- **4 empleados**
-- **2 departamentos diferentes**
-- Cada empleado deberá estar correctamente asignado a un departamento
+- Mínimo 4 empleados  
+- Mínimo 2 departamentos  
+
+Cada empleado deberá estar asignado a su departamento correspondiente.
 
 ---
 
-### 4.4 Gestión de reuniones
-Se deberán registrar:
+### 4.4 Gestión de ausencias
+Se deberán registrar solicitudes de ausencia para empleados en diferentes estados:
 
-- **Mínimo 4 reuniones**
-- Cada reunión deberá incluir:
-  - Fecha y hora
-  - Participantes
-  - Descripción
+- Una ausencia aprobada  
+- Una ausencia pendiente de aprobación  
+- Una ausencia rechazada  
 
-Las reuniones deben visualizarse en el calendario.
+Debe visualizarse claramente el estado de cada solicitud.
 
 ---
 
-### 4.5 Gestión de vacaciones
-Se deberán configurar vacaciones de empleados:
+### 4.5 Gestión del sitio web corporativo
+El sitio web deberá incluir:
 
-- **Un periodo vacacional de 10 días APROBADO**
-- **Un periodo vacacional de 5 días PENDIENTE de aprobación**
-
-Debe verse claramente el estado de cada solicitud.
+- Página principal personalizada  
+- Información realista de la empresa  
+- Página de contacto  
+- Enlaces funcionales  
+- Integración con la tienda online  
 
 ---
 
-### 4.6 Sitio web corporativo
-El alumnado deberá editar el sitio web e incluir, como mínimo:
+### 4.6 Registro de ventas
+Se deberán registrar ventas reales dentro del sistema:
 
-- Página principal personalizada
-- Página de contacto
-- Información básica de la empresa
-- Enlaces funcionales
+- Mínimo 3 ventas realizadas  
+- Las ventas deben reflejarse correctamente en el sistema  
+- Debe observarse la relación entre pedidos, clientes y productos  
 
 ---
 
 ## 5. Entregables
-El alumnado deberá entregar:
 
-1. Documento PDF con:
-   - Capturas de pantalla justificativas de cada apartado
-   - Explicación breve de los módulos utilizados
-2. Exportación de:
-   - Lista de productos
-   - Lista de empleados
-3. Breve memoria final (1–2 páginas) explicando:
-   - Qué es un ERP
-   - Ventajas del uso de Odoo en una empresa
+Se deberá entregar un único documento en formato PDF que incluya:
+
+- Capturas de pantalla que evidencien el uso de cada módulo utilizado  
+- Evidencias de:
+  - configuración de la empresa  
+  - productos y categorías  
+  - empleados y departamentos  
+  - ausencias en distintos estados  
+  - sitio web corporativo  
+  - ventas registradas  
+- Breve explicación de los módulos utilizados y su función dentro de la empresa  
+
+Las capturas deben permitir verificar claramente el trabajo realizado.
 
 ---
 
-## 6. RÚBRICA DE EVALUACIÓN (CRITERIOS DE EVALUACIÓN)
+## 6. Evaluación
 
-| CE | Descripción | Nivel Excelente (10–9) | Nivel Adecuado (8–6) | Nivel Básico (5–4) | Insuficiente (<4) |
-|----|-------------|------------------------|----------------------|-------------------|------------------|
-| a | Identificación de sistemas ERP | Identifica y contextualiza correctamente los sistemas ERP | Identifica los principales ERP | Identificación superficial | No identifica |
-| b | Ventajas de los sistemas ERP | Explica ventajas con ejemplos reales | Enumera ventajas correctamente | Ventajas poco claras | No reconoce ventajas |
-| c | Evaluación de aplicaciones | Analiza Odoo frente a otros ERP | Describe características de Odoo | Descripción incompleta | No evalúa |
-| d | Instalación de aplicaciones | Instala todos los módulos requeridos sin errores | Instala la mayoría correctamente | Errores leves | No instala |
-| e | Configuración y administración | Configuración completa y coherente | Configuración funcional | Configuración parcial | No configura |
-| f | Acceso seguro a la información | Roles y accesos bien definidos | Accesos básicos configurados | Configuración mínima | No configura |
-| g | Generación de informes | Genera y explica informes correctamente | Genera informes simples | Informes incompletos | No genera |
-| h | Extracción de información | Exporta datos y los reutiliza | Exporta datos correctamente | Exportación limitada | No exporta |
-| i | Documentación de explotación | Memoria clara, bien estructurada | Memoria correcta | Memoria superficial | No documenta |
+Esta actividad evalúa el 100% del RA7.
+
+Se valorará:
+
+- correcta instalación y uso de los módulos  
+- coherencia y realismo de la empresa creada  
+- integración entre los distintos módulos  
+- correcta gestión de productos, empleados y ausencias  
+- funcionamiento de la tienda online  
+- registro adecuado de ventas  
+- calidad y claridad de las evidencias presentadas  
 
 ---
 
 ## 7. Observaciones
-- Se valorará especialmente la **coherencia del conjunto**
-- No se permite reutilizar datos de ejemplo sin adaptación
-- El trabajo debe reflejar un **uso realista de un ERP empresarial**
+
+- La temática de la empresa es libre, pero debe ser coherente.  
+- No se permite reutilizar datos de ejemplo sin adaptación.  
+- El trabajo debe reflejar un uso realista de un ERP empresarial.  
+- Se valorará la coherencia visual y organizativa del sistema.
 
 ---
 
-**Fecha de entrega:** 19/02/2026  
-**Formato:** PDF + capturas  
+**Fecha de entrega:** 5 de marzo de 2026  
+**Entrega:** a través del aula virtual  
+**Formato:** documento PDF  
 **Trabajo individual**
