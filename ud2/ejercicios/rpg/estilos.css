@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  border: 1px solid #ccc;
+  padding: 12px;
+  max-width: 520px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.btn {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.stat {
+  padding: 6px;
+  border: 1px solid #eee;
+}
+
+.log {
+  height: 140px;
+  overflow: auto;
+  border: 1px dashed #aaa;
+  padding: 8px;
+}
+
+.peligro {
+  border: 2px solid red;
+}
+
+.cansado {
+  opacity: 0.6;
+}
+
+.bloqueado {
+  pointer-events: none;
+  opacity: 0.5;
+}

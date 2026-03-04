@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini RPG</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h2>Mini RPG</h2>
+
+    <div class="panel">
+      <div class="row">
+        <label>
+          Nombre:
+          <input type="text" id="nombre" placeholder="Introduce tu nombre" />
+        </label>
+
+        <button id="btnCrear" class="btn">Empezar</button>
+      </div>
+
+      <div id="zonaJuego" class="oculto">
+        <h3 id="tituloPersonaje"></h3>
+
+        <div id="panelStats" class="stats">
+          <div class="stat">Experiencia: <strong id="xp">0</strong></div>
+          <div class="stat">Vida: <strong id="vida">100</strong></div>
+          <div class="stat">Energía: <strong id="energia">50</strong></div>
+          <div class="stat">Estado: <strong id="estado">Normal</strong></div>
+        </div>
+
+        <div class="row">
+          <button id="btnEntrenar" class="btn">Entrenar</button>
+          <button id="btnDescansar" class="btn">Descansar</button>
+          <button id="btnLuchar" class="btn">Luchar</button>
+          <button id="btnReiniciar" class="btn">Reiniciar</button>
+        </div>
+
+        <p>Registro</p>
+        <div id="log" class="log"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
