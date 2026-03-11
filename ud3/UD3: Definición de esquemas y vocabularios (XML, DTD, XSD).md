@@ -24,3 +24,12 @@ Otro podría definir el xml de la siguiente forma:
 ```
 
 <p>Aunque ambos documentos contienen la misma información, no siguen la misma estructura, lo que puede provocar errores en las aplicaciones que procesan estos datos.</p>
+
+Para evitar este problema se utilizan mecanismos de validación, que permiten definir reglas sobre:
+- qué elementos pueden aparecer
+- en qué orden
+- cuántas veces
+- qué atributos pueden tener
+- qué tipo de datos contienen
+
+Estas reglas se definen mediante esquemas o vocabularios XML.
