@@ -11,7 +11,7 @@ Ejemplo de documento XML:
     <edad>33</edad>
     <curso>DAW</curso>
 </alumno>
-````
+```
 
 Otro podría definir el xml de la siguiente forma:
 
@@ -115,9 +115,11 @@ Aquí XML define:
 Los documentos XML están formados por elementos, que se representan mediante etiquetas. Cada elemento puede contener texto, otros elementos o atributos.
 
 <h3> Elementos con contenido</h3>
+
 ```xml
 <nombre>Francisco</nombre>
 ```
+
 En este ejemplo:
 - <nombre> → etiqueta de apertura
 - Francisco → contenido
@@ -135,26 +137,34 @@ Un elemento puede contener otros elementos.
 <h3>Elementos Vacíos</h3>
 Un elemento puede no tener contenido. En ese caso puede escribirse de dos formas.
 Forma larga:
+
 ```xml
 <salto></salto>
 ```
+
 Forma abreviada:
+
 ```xml 
 <salto/>
 ```
+
 La segunda forma es la más utilizada
+
 ```xml 
 <imagen src="foto.jpg"/>
 ```
+
 <h3>Atributos en XML</h3>
 
 Los elementos pueden tener atributos, que proporcionan información adicional.
 Por ejemplo:
+
 ```xml
 <alumno id="1">
     <nombre>Juanma</nombre>
 </alumno>
 ```
+
 En este caso:
 - id es un atributo
 - su valor es "1"
@@ -167,8 +177,10 @@ Características de los atributos:
 <h3>Múltiples atributos</h3>
 
 Un elemento puede tener varios atributos.
+
 ```xml
 <producto id="23" categoria="informatica">
     <nombre>Teclado</nombre>
 </producto>
 ```
+
