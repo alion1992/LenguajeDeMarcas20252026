@@ -66,4 +66,43 @@ Ambas permiten definir la estructura de un documento XML, aunque XSD es más pot
 
 <img width="270" height="171" alt="image" src="https://github.com/user-attachments/assets/ef5415af-c2ec-48aa-ad2a-f466dedbafd8" />
 
+<h1>4. Casos reales donde se utiliza XML</h1>
+
+<h2>Archivos de configuaración de aplicaciones web</h2>
+
+En aplicaciones java para la conexción a BBDD:
+```xml
+<configuration>
+   <database>
+      <host>localhost</host>
+      <port>5432</port>
+   </database>
+</configuration>
+```
+Frameworks como:
+- Spring
+- Maven
+- Hibernate
+
+<img width="335" height="128" alt="image" src="https://github.com/user-attachments/assets/bd9df3b1-9068-47d0-8b65-1b6d9f2a753b" />
+
+<img width="871" height="704" alt="image" src="https://github.com/user-attachments/assets/43d5e38e-e914-4b66-8046-cd5d8e84acbb" />
+
+<img width="766" height="258" alt="image" src="https://github.com/user-attachments/assets/8cd2c1ae-c781-47c5-a91f-cd375d1a69fa" />
+
+<h2>Android archivos de interfaces gráficas</h2>
+
+```xml
+<LinearLayout>
+    <TextView
+        android:text="Hola mundo" />
+
+    <Button
+        android:text="Aceptar"/>
+</LinearLayout>
+```
+
+
+
+
 
