@@ -61,3 +61,9 @@ Ambas permiten definir la estructura de un documento XML, aunque XSD es más pot
     <autor>Juan Pérez</autor>
 </libro>
 ```
+
+<img width="560" height="220" alt="image" src="https://github.com/user-attachments/assets/ba4ff402-83ff-414a-b3fb-418307859077" />
+
+<img width="270" height="171" alt="image" src="https://github.com/user-attachments/assets/ef5415af-c2ec-48aa-ad2a-f466dedbafd8" />
+
+
