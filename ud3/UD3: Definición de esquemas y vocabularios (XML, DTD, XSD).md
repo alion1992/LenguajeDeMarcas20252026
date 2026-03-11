@@ -101,8 +101,74 @@ Frameworks como:
         android:text="Aceptar"/>
 </LinearLayout>
 ```
+Aquí XML define:
 
+- botones
+- textos
+- layouts
+- estilos
 
+<strong>XML se utiliza cuando diferentes sistemas necesitan intercambiar información de forma estructurada y validable.</strong>
 
+<h1>5. Sintáxis básica de los elementos en XML</h1>
 
+Los documentos XML están formados por elementos, que se representan mediante etiquetas. Cada elemento puede contener texto, otros elementos o atributos.
 
+<h3> Elementos con contenido</h3>
+```xml
+<nombre>Francisco</nombre>
+```
+En este ejemplo:
+- <nombre> → etiqueta de apertura
+- Francisco → contenido
+- </nombre> → etiqueta de cierre
+
+<h3>Elementos Anidados</h3>
+Un elemento puede contener otros elementos.
+```xml
+<alumno>
+    <nombre>Ana</nombre>
+    <edad>20</edad>
+</alumno>
+```
+
+<h3>Elementos Vacíos</h3>
+Un elemento puede no tener contenido. En ese caso puede escribirse de dos formas.
+Forma larga:
+```xml
+<salto></salto>
+```
+Forma abreviada:
+```xml 
+<salto/>
+```
+La segunda forma es la más utilizada
+```xml 
+<imagen src="foto.jpg"/>
+```
+<h3>Atributos en XML</h3>
+
+Los elementos pueden tener atributos, que proporcionan información adicional.
+Por ejemplo:
+```xml
+<alumno id="1">
+    <nombre>Juanma</nombre>
+</alumno>
+```
+En este caso:
+- id es un atributo
+- su valor es "1"
+Características de los atributos:
+
+- siempre aparecen en la etiqueta de apertura
+- siempre tienen un valor
+- el valor debe ir entre comillas
+
+<h3>Múltiples atributos</h3>
+
+Un elemento puede tener varios atributos.
+```xml
+<producto id="23" categoria="informatica">
+    <nombre>Teclado</nombre>
+</producto>
+```
