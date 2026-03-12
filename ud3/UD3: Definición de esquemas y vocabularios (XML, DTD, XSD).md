@@ -184,3 +184,10 @@ Un elemento puede tener varios atributos.
 </producto>
 ```
 
+<h3>COmentarios en xml</h3>
+
+Para poner comentarios en los archivos xml sería de la siguiente forma
+
+```xml
+<!-- Estos es un comentario -->
+```
