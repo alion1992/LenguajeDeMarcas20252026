@@ -1,0 +1,26 @@
+
+
+<clase>
+<estudiantes>
+    <estudiante id="1" categoria="nuevo">
+        <nombre compuesto="true">Miguel</nombre>
+        <apellidos>García Mora</apellidos>
+        <curso>1 DAW</curso>
+        <edad></edad>
+        
+    </estudiante>
+    <estudiante id="2">
+    <nombre>Juanma</nombre>
+    <apellidos>Delgado Garcia</apellidos>
+    <curso>1 DAW</curso>
+    </estudiante>
+    <estudiante id="3" categoria="repetidor">
+    <nombre>Daniel</nombre>
+    <apellidos>Hergueta Losa</apellidos>
+    <curso>1 DAW</curso>
+    </estudiante>
+
+</estudiantes>
+
+
+</clase>
