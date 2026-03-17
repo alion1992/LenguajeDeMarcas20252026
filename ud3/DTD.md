@@ -208,6 +208,74 @@ Ejemplo de XML válido:
 &lt;/alumno&gt;
 </pre>
 
+<h3>Varios atributos dentro de un mismo elemento</h3>
+Para definir varios atributos de un mismo elemento, se puede utilizar una o varias declaraciones de atributos. Los
+siguientes ejemplos son equivalentes:
+
+```xml
+<!ATTLIST nombreElemento nombreAtributo1 tipoAtributo1 valorInicialAtributo1>
+<!ATTLIST nombreElemento nombreAtributo2 tipoAtributo2 valorInicialAtributo2>
+<!ATTLIST nombreElemento
+nombreAtributo1 tipoAtributo1 valorInicialAtributo1
+nombreAtributo2 tipoAtributo2 valorInicialAtributo2
+>
+```
+
+Los tipos de atributos son los siguientes:
+<strong>CDATA:</strong> el atributo contiene caracteres (sin restricciones). Por ejemplo:
+
+<img width="765" height="273" alt="image" src="https://github.com/user-attachments/assets/a0ef2672-87b5-4cf3-b94a-5768c6a6482c" />
+
+<strong>NMTOKEN:</strong> el atributo sólo contiene letras, dígitos, y los caracteres punto ".", guión "-", subrayado "_" y dos puntos
+":". Por ejemplo:
+<img width="781" height="151" alt="image" src="https://github.com/user-attachments/assets/bd2ccfb6-6c52-4d5c-bb68-e4e43a5d253e" />
+
+<img width="776" height="201" alt="image" src="https://github.com/user-attachments/assets/bcdfc1eb-041a-43e5-9ee4-d0a0c857eaf2" />
+
+<strong>NMTOKENS:</strong> el atributo sólo contiene letras, dígitos, y los caracteres punto ".", guión "-", subrayado "_", dos puntos
+":" (como el tipo NMTOKEN) y también espacios en blanco. Por ejemplo:
+<img width="779" height="279" alt="image" src="https://github.com/user-attachments/assets/b5be6732-b618-4a52-a517-18c54dda6503" />
+
+<strong>valores:</strong> el atributo sólo puede contener uno de los términos de una lista. La lista se escribe entre paréntesis, con los
+términos separados por una barra vertical "|". Por ejemplo:
+
+<img width="781" height="238" alt="image" src="https://github.com/user-attachments/assets/e9c18c24-5ed6-424a-b886-6fd7b9cf9f19" />
+
+<strong>ID:</strong> el valor del atributo (no el nombre) debe ser único y no se puede repetir en otros elementos o atributos. Por
+ejemplo:
+
+<img width="818" height="276" alt="image" src="https://github.com/user-attachments/assets/fc87054d-24ca-4e61-a956-2cbf40014a3c" />
+
+<strong>IDREF:</strong> el valor del atributo debe coincidir con el valor del atributo ID de otro elemento. Por ejemplo:
+<img width="756" height="79" alt="image" src="https://github.com/user-attachments/assets/b1804449-3f09-45df-8c83-805246dd5bcc" />
+<img width="784" height="263" alt="image" src="https://github.com/user-attachments/assets/6c4eedb6-4984-4cb2-8e56-d09053db8f43" />
+
+<strong>IDREFS:</strong> el valor del atributo es una serie de valores separados por espacios que coinciden con el valor del atributo
+ID de otros elementos.
+
+<img width="768" height="435" alt="image" src="https://github.com/user-attachments/assets/4cade6e6-beec-43d4-b6c3-cfa4bebc6a3e" />
+
+Los valores iniciales de los atributos son los siguientes:
+<strong>#REQUIRED:</strong> el atributo es obligatorio, aunque no se especifica ningún valor predeterminado. Por ejemplo:
+
+<img width="771" height="272" alt="image" src="https://github.com/user-attachments/assets/0ace22cf-b749-47ab-bac4-265ea3a54af1" />
+
+<strong>#IMPLIED:</strong> el atributo no es obligatorio y no se especifica ningún valor predeterminado. Por ejemplo:
+<img width="793" height="273" alt="image" src="https://github.com/user-attachments/assets/c602355c-9640-48ac-90a8-a9e3524fbbef" />
+
+<strong>#FIXED valor:</strong> el atributo tiene un valor fijo. Por ejemplo:
+<img width="778" height="271" alt="image" src="https://github.com/user-attachments/assets/f4d20ff7-c8d8-4eac-aa8d-b0002a87996e" />
+
+<strong>valor:</strong> el atributo tiene un valor predeterminado. Por ejemplo:
+<img width="739" height="294" alt="image" src="https://github.com/user-attachments/assets/1624496e-457e-49cc-9601-6276ec66bd39" />
+
+
+
+
+
+
+
+
 <h2>6.8 DTD interno</h2>
 
 <p>Un DTD también puede definirse dentro del propio documento XML.</p>
