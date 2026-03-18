@@ -6,6 +6,7 @@
     <futbolista>
         <nombre color="azul">Ricardo</nombre>
         <apellido color-secundario="e2">Higueras</apellido>
+        <pais nacionalidad="español">españa</pais>
         <equipo id="L1" categoria="d">
             <nombre color="rojo">Real Madrid</nombre>
             <ano-de-fundacion>1902</ano-de-fundacion>
@@ -22,5 +23,6 @@
     <futbolista>
         <nombre color="verde">Francisco</nombre>
         <apellido color-secundario="e2">Alía</apellido>
+        <pais nacionalidad="español">españa</pais>
     </futbolista>
 </futbolistas>

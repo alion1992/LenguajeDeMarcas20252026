@@ -1,10 +1,11 @@
 <!-- Esto es un archivo de validacion de futbolistas-->
 
 <!ELEMENT futbolistas (futbolista+)>
-<!ELEMENT futbolista (nombre, apellido, equipo*)>
+<!ELEMENT futbolista (nombre, apellido,pais, equipo*)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT apellido (#PCDATA)>
 <!ELEMENT edad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
 <!ELEMENT equipo (nombre,ano-de-fundacion)>
 <!ELEMENT ano-de-fundacion (#PCDATA)>
 
@@ -13,3 +14,4 @@
 <!ATTLIST nombre color (verde|rojo|azul) #REQUIRED>
 <!ATTLIST equipo categoria CDATA #REQUIRED>
 <!ATTLIST apellido color-secundario IDREF #REQUIRED>
+<!ATTLIST pais nacionalidad CDATA #FIXED "español">
