@@ -163,6 +163,52 @@ Porque supera el máximo permitido.
 
 ---
 
+### Restricciones sobre un conjunto de valores
+
+Para limitar el contenido de un elemento XML a un conjunto de valores aceptables, utilizaríamos la restricción de enumeración.
+
+El siguiente ejemplo define un elemento llamado "coche" con una restricción. Los únicos valores aceptables son: Audi, Golf, BMW:
+
+```xml
+<xs:element name="car">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Audi"/>
+      <xs:enumeration value="Golf"/>
+      <xs:enumeration value="BMW"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+```
+
+### Restricciones sobre una serie de valores
+
+Para limitar el contenido de un elemento XML y definir una serie de números o letras que se puedan utilizar, usaríamos la restricción de patrón.
+
+El siguiente ejemplo define un elemento llamado "letra" con una restricción. El único valor aceptable es UNA de las letras en minúscula de la a a la z:
+
+```xml
+<xs:element name="letter">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+```
+
+El siguiente ejemplo define un elemento llamado "iniciales" con una restricción. El único valor aceptable son TRES letras MAYÚSCULAS de la a a la z:
+
+```xml
+<xs:element name="initials">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+```
+
 ## 7. XSD Complex Elements
 
 Son elementos que:
