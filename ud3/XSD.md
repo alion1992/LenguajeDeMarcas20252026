@@ -52,13 +52,28 @@ Elemento raíz:
 
 ## 4. XSD Elements
 
-``` xml
+Los elementos (`xs:element`) definen las etiquetas que pueden aparecer en el XML.
+
+### Elemento simple
+
+```xml
 <xs:element name="nombre" type="xs:string"/>
 ```
 
-Elemento complejo:
+Representa un elemento que solo contiene texto.
+El tipo (`xs:string`) indica que el contenido es texto.
 
-``` xml
+Ejemplo XML válido:
+
+```xml
+<nombre>Juan</nombre>
+```
+
+---
+
+### Elemento complejo
+
+```xml
 <xs:element name="persona">
   <xs:complexType>
     <xs:sequence>
@@ -69,19 +84,51 @@ Elemento complejo:
 </xs:element>
 ```
 
-------------------------------------------------------------------------
+Un elemento complejo contiene otros elementos (estructura jerárquica).
+`xs:sequence` indica que deben aparecer en ese orden.
+
+Ejemplo XML:
+
+```xml
+<persona>
+  <nombre>Juan</nombre>
+  <edad>30</edad>
+</persona>
+```
+
+---
 
 ## 5. XSD Attributes
 
-``` xml
+Los atributos proporcionan información adicional a un elemento.
+
+```xml
 <xs:attribute name="dni" type="xs:string" use="required"/>
 ```
 
-------------------------------------------------------------------------
+### Explicación
+
+* `name` → nombre del atributo
+* `type` → tipo de dato
+* `use="required"` → obligatorio
+
+Ejemplo XML:
+
+```xml
+<persona dni="12345678A">
+  <nombre>Juan</nombre>
+</persona>
+```
+
+Si no aparece `dni`, el XML no valida.
+
+---
 
 ## 6. XSD Restrictions
 
-``` xml
+Permiten limitar los valores de un tipo.
+
+```xml
 <xs:simpleType name="edadTipo">
   <xs:restriction base="xs:int">
     <xs:minInclusive value="0"/>
@@ -90,77 +137,233 @@ Elemento complejo:
 </xs:simpleType>
 ```
 
-------------------------------------------------------------------------
+### Muy importante
+
+Aquí estás **creando un nuevo tipo de dato** llamado `edadTipo`.
+
+No se aplica automáticamente, hay que usarlo en un elemento:
+
+```xml
+<xs:element name="edad" type="edadTipo"/>
+```
+
+### Ejemplo válido
+
+```xml
+<edad>25</edad>
+```
+
+### Ejemplo inválido
+
+```xml
+<edad>200</edad>
+```
+
+Porque supera el máximo permitido.
+
+---
 
 ## 7. XSD Complex Elements
 
-Permiten estructuras jerárquicas con hijos y atributos.
+Son elementos que:
 
-------------------------------------------------------------------------
+* Contienen otros elementos
+* Pueden tener atributos
+* Definen estructuras completas
+
+Ejemplo real:
+
+```xml
+<xs:element name="alumno">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nombre"/>
+      <xs:element name="nota"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:int"/>
+  </xs:complexType>
+</xs:element>
+```
+
+Esto define una entidad completa.
+
+---
 
 ## 8. XSD Empty
 
-``` xml
-<xs:complexType/>
+Elemento sin contenido.
+
+```xml
+<xs:element name="salto">
+  <xs:complexType/>
+</xs:element>
 ```
 
-------------------------------------------------------------------------
+Ejemplo XML:
+
+```xml
+<salto/>
+```
+
+No puede tener texto ni hijos.
+
+---
 
 ## 9. XSD Elements-only
 
-Solo elementos, sin texto.
+Solo permite elementos, no texto.
 
-------------------------------------------------------------------------
+Ejemplo:
+
+```xml
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="nombre"/>
+  </xs:sequence>
+</xs:complexType>
+```
+
+Correcto:
+
+```xml
+<persona>
+  <nombre>Juan</nombre>
+</persona>
+```
+
+Incorrecto:
+
+```xml
+<persona>Juan</persona>
+```
+
+---
 
 ## 10. XSD Text-only
 
-``` xml
+Solo permite texto.
+
+```xml
 <xs:element name="mensaje" type="xs:string"/>
 ```
 
-------------------------------------------------------------------------
+✔ No puede tener elementos hijos.
+
+---
 
 ## 11. XSD Mixed
 
-``` xml
-<xs:complexType mixed="true"/>
+Permite mezclar texto y elementos.
+
+```xml
+<xs:complexType mixed="true">
+  <xs:sequence>
+    <xs:element name="b"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
-------------------------------------------------------------------------
+### ¿Para qué sirve?
+
+Para documentos donde hay texto con etiquetas intercaladas (como HTML).
+
+Ejemplo XML:
+
+```xml
+<p>Hola <b>mundo</b></p>
+```
+
+✔ Sin `mixed="true"` esto daría error.
+
+---
 
 ## 12. XSD Indicators
 
--   sequence
--   choice
--   all
+Controlan la estructura.
 
-------------------------------------------------------------------------
+### sequence (orden obligatorio)
 
-## 13. XSD `<any>`{=html}
-
-``` xml
-<xs:any/>
+```xml
+<xs:sequence>
+  <xs:element name="nombre"/>
+  <xs:element name="edad"/>
+</xs:sequence>
 ```
 
-------------------------------------------------------------------------
+Orden fijo.
 
-## 14. XSD `<anyAttribute>`{=html}
+---
 
-``` xml
+### choice (uno u otro)
+
+```xml
+<xs:choice>
+  <xs:element name="email"/>
+  <xs:element name="telefono"/>
+</xs:choice>
+```
+
+Solo uno de los dos.
+
+---
+
+### all (sin orden)
+
+```xml
+<xs:all>
+  <xs:element name="nombre"/>
+  <xs:element name="edad"/>
+</xs:all>
+```
+
+Pueden ir en cualquier orden
+Cada uno solo una vez
+
+---
+
+## 13. XSD <any>
+
+Permite cualquier elemento.
+
+```xml
+<xs:any minOccurs="0" maxOccurs="unbounded"/>
+```
+
+Útil cuando no sabes la estructura exacta
+Reduce el control de validación
+
+---
+
+## 14. XSD <anyAttribute>
+
+Permite cualquier atributo.
+
+```xml
 <xs:anyAttribute/>
 ```
 
-------------------------------------------------------------------------
+Similar a `<any>` pero para atributos
+
+---
 
 ## 15. XSD Substitution
 
-Permite herencia de elementos.
+Permite sustituir un elemento por otros.
 
-------------------------------------------------------------------------
+```xml
+<xs:element name="animal" abstract="true"/>
+<xs:element name="perro" substitutionGroup="animal"/>
+```
+`animal` no aparece directamente
+Puede ser reemplazado por `perro`, `gato`, etc.
 
-## 16. Ejemplo Completo
+ Es una forma de herencia en XML.
 
-``` xml
+---
+
+## 16. Ejemplo Completo 
+
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:simpleType name="edadTipo">
@@ -174,31 +377,5 @@ Permite herencia de elementos.
     <xs:complexType>
       <xs:sequence>
         <xs:element name="nombre"/>
-        <xs:element name="edad" type="edadTipo"/>
-      </xs:sequence>
-      <xs:attribute name="dni" type="xs:string"/>
-    </xs:complexType>
-  </xs:element>
-
-</xs:schema>
+        <xs:element name="edad" type="edadTipo"
 ```
-
-------------------------------------------------------------------------
-
-## 17. Tipos de datos
-
--   xs:string
--   xs:int
--   xs:decimal
--   xs:boolean
--   xs:date
-
-------------------------------------------------------------------------
-
-## 18. Reference
-
-Reutilización de tipos.
-
-------------------------------------------------------------------------
-
-# FIN
