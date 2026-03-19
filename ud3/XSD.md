@@ -78,6 +78,7 @@ Ejemplo XML válido:
 -   xs:decimal
 -   xs:boolean
 -   xs:date
+-   xs:float
 
 ------------------------------------------------------------------------
 
