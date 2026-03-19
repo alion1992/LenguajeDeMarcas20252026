@@ -19,16 +19,6 @@ Sirve para validar XML de forma más potente que DTD.
 
 ------------------------------------------------------------------------
 
-##  Tipos de datos
-
--   xs:string
--   xs:int
--   xs:decimal
--   xs:boolean
--   xs:date
-
-------------------------------------------------------------------------
-
 ## 2. XSD How To
 
 ### Paso 1: Crear el XSD
@@ -80,6 +70,16 @@ Ejemplo XML válido:
 ```
 
 ---
+
+##  Tipos de datos
+
+-   xs:string
+-   xs:int
+-   xs:decimal
+-   xs:boolean
+-   xs:date
+
+------------------------------------------------------------------------
 
 ### Elemento complejo
 
