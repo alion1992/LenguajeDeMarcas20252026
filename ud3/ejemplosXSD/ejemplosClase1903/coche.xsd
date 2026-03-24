@@ -1,0 +1,56 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="coche">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="marca">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Audi" />
+                            <xs:enumeration value="Seat" />
+                            <xs:enumeration value="BMW" />
+                            <xs:enumeration value="Skoda" />
+                        </xs:restriction>
+                    </xs:simpleType>
+
+                </xs:element>
+                <xs:element name="modelo" type="xs:string" />
+                <xs:element name="ruedas" type="cantidadRuedas"></xs:element>
+                <xs:element name="matricula" type="xs:int"></xs:element>
+                <xs:element name="letras-matricula" type="letras"></xs:element>
+                <xs:element name="ano-matriculacion" type="anos"></xs:element>
+                <xs:element name="kilometros" type="kilometraje"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="cantidadRuedas">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="anos">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1800" />
+            <xs:maxInclusive value="2500" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kilometraje">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="1000000" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="letras">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][A-Z][A-Z]"></xs:pattern>
+        </xs:restriction>
+
+
+    </xs:simpleType>
+
+</xs:schema>

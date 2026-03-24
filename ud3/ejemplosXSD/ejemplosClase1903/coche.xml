@@ -1,0 +1,13 @@
+<coche xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="coche.xsd">
+
+    <marca>Seat</marca>
+    <modelo>leon</modelo>
+    <ruedas>20</ruedas>
+    <matricula>0000</matricula>
+    <letras-matricula>AAA</letras-matricula>
+    <ano-matriculacion>2016</ano-matriculacion>
+    <kilometros>900000</kilometros>
+
+
+</coche>

@@ -1,62 +1,85 @@
-# XSD Schema
+# XSD Schema 
 
-## XSD Introduction
+------------------------------------------------------------------------
 
-XSD (XML Schema Definition) es un lenguaje de definición de esquemas
-basado en XML que permite describir la estructura, el contenido y las
-restricciones de documentos XML.
+## 1. XSD Introduction
 
-A diferencia de los DTD, XSD: - Está escrito en XML - Permite definir
-tipos de datos (números, fechas, booleanos) - Permite aplicar
-restricciones avanzadas - Soporta namespaces - Es más estricto y potente
-para validación
+XSD (XML Schema Definition) es un lenguaje que permite definir la
+estructura, tipos de datos y restricciones de un documento XML.
 
-## XSD How To
+Sirve para validar XML de forma más potente que DTD.
 
-Para validar un XML con XSD:
+### Ventajas frente a DTD
 
-1.  Crear el esquema (.xsd)
-2.  Asociar el XML al XSD
+-   Sintaxis XML (más coherente)
+-   Tipado de datos (int, string, date)
+-   Permite restricciones (rangos, patrones)
+-   Reutilización de tipos
+-   Soporte de namespaces
+
+------------------------------------------------------------------------
+
+## 2. XSD How To
+
+### Paso 1: Crear el XSD
+
+Define las reglas que debe cumplir el XML.
+
+### Paso 2: Asociarlo al XML
 
 ``` xml
-<?xml version="1.0" encoding="UTF-8"?>
 <libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="libros.xsd">
 </libros>
 ```
 
-3.  Validación mediante parser XML
+### Paso 3: Validar
 
-## XSD `<schema>`{=html}
+El parser comprueba estructura, tipos y restricciones.
 
-Elemento raíz del XSD.
+------------------------------------------------------------------------
+
+## 3. XSD `<schema>`{=html}
+
+Elemento raíz:
 
 ``` xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </xs:schema>
 ```
 
-## XSD Elements
+------------------------------------------------------------------------
 
-Define los elementos XML.
+## 4. XSD Elements
 
 ``` xml
 <xs:element name="nombre" type="xs:string"/>
 ```
 
-Tipos: - Simples (texto) - Complejos (estructura interna)
-
-## XSD Attributes
-
-Define atributos.
+Elemento complejo:
 
 ``` xml
-<xs:attribute name="id" type="xs:int"/>
+<xs:element name="persona">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nombre"/>
+      <xs:element name="edad"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
 ```
 
-## XSD Restrictions
+------------------------------------------------------------------------
 
-Permite restringir valores.
+## 5. XSD Attributes
+
+``` xml
+<xs:attribute name="dni" type="xs:string" use="required"/>
+```
+
+------------------------------------------------------------------------
+
+## 6. XSD Restrictions
 
 ``` xml
 <xs:simpleType name="edadTipo">
@@ -67,76 +90,115 @@ Permite restringir valores.
 </xs:simpleType>
 ```
 
-## XSD Complex Elements
+------------------------------------------------------------------------
 
-Elementos con estructura.
+## 7. XSD Complex Elements
 
-``` xml
-<xs:complexType>
-  <xs:sequence>
-    <xs:element name="nombre"/>
-  </xs:sequence>
-</xs:complexType>
-```
+Permiten estructuras jerárquicas con hijos y atributos.
 
-## XSD Empty
+------------------------------------------------------------------------
 
-Elemento vacío:
+## 8. XSD Empty
 
 ``` xml
 <xs:complexType/>
 ```
 
-## XSD Elements-only
+------------------------------------------------------------------------
+
+## 9. XSD Elements-only
 
 Solo elementos, sin texto.
 
-## XSD Text-only
+------------------------------------------------------------------------
 
-Solo texto:
+## 10. XSD Text-only
 
 ``` xml
 <xs:element name="mensaje" type="xs:string"/>
 ```
 
-## XSD Mixed
+------------------------------------------------------------------------
 
-Texto + elementos.
+## 11. XSD Mixed
 
-## XSD Indicators
+``` xml
+<xs:complexType mixed="true"/>
+```
 
--   sequence: orden
--   choice: alternativa
--   all: sin orden
+------------------------------------------------------------------------
 
-## XSD `<any>`{=html}
+## 12. XSD Indicators
 
-Permite cualquier elemento.
+-   sequence
+-   choice
+-   all
 
-## XSD `<anyAttribute>`{=html}
+------------------------------------------------------------------------
 
-Permite cualquier atributo.
+## 13. XSD `<any>`{=html}
 
-## XSD Substitution
+``` xml
+<xs:any/>
+```
 
-Permite sustitución de elementos.
+------------------------------------------------------------------------
 
-## XSD Example
+## 14. XSD `<anyAttribute>`{=html}
 
-Ejemplo completo de esquema y XML válido.
+``` xml
+<xs:anyAttribute/>
+```
 
-## XSD Data Types
+------------------------------------------------------------------------
 
-### XSD String
+## 15. XSD Substitution
 
-### XSD Date/Time
+Permite herencia de elementos.
 
-### XSD Numeric
+------------------------------------------------------------------------
 
-### XSD Misc
+## 16. Ejemplo Completo
 
-### XSD Reference
+``` xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-Tipos y reutilización de estructuras.
+  <xs:simpleType name="edadTipo">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
 
+  <xs:element name="persona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre"/>
+        <xs:element name="edad" type="edadTipo"/>
+      </xs:sequence>
+      <xs:attribute name="dni" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
 
+</xs:schema>
+```
+
+------------------------------------------------------------------------
+
+## 17. Tipos de datos
+
+-   xs:string
+-   xs:int
+-   xs:decimal
+-   xs:boolean
+-   xs:date
+
+------------------------------------------------------------------------
+
+## 18. Reference
+
+Reutilización de tipos.
+
+------------------------------------------------------------------------
+
+# FIN

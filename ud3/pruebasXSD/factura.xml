@@ -1,0 +1,7 @@
+<facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="factura.xsd">
+
+        <codigo tipo="almacen">V1233</codigo>
+        <ano>20</ano>
+        <edad>70</edad>
+</facturas>
