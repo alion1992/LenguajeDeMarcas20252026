@@ -9,7 +9,7 @@
 <!ELEMENT equipo (nombre,ano-de-fundacion)>
 <!ELEMENT ano-de-fundacion (#PCDATA)>
 
-<!ATTLIST equipo id ID #REQUIRED> 
+<!ATTLIST equipo id ID #REQUIRED>
 
 <!ATTLIST nombre color (verde|rojo|azul) #REQUIRED>
 <!ATTLIST equipo categoria CDATA #REQUIRED>

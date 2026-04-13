@@ -1,8 +1,8 @@
-# XSD Schema 
+# XSD Schema
 
-------------------------------------------------------------------------
+---
 
-## 1. XSD Introduction
+## 1. XSD Introducción
 
 XSD (XML Schema Definition) es un lenguaje que permite definir la
 estructura, tipos de datos y restricciones de un documento XML.
@@ -11,15 +11,15 @@ Sirve para validar XML de forma más potente que DTD.
 
 ### Ventajas frente a DTD
 
--   Sintaxis XML (más coherente)
--   Tipado de datos (int, string, date)
--   Permite restricciones (rangos, patrones)
--   Reutilización de tipos
--   Soporte de namespaces
+- Sintaxis XML (más coherente)
+- Tipado de datos (int, string, date)
+- Permite restricciones (rangos, patrones)
+- Reutilización de tipos
+- Soporte de namespaces
 
-------------------------------------------------------------------------
+---
 
-## 2. XSD How To
+## 2. Cómo usar XSD
 
 ### Paso 1: Crear el XSD
 
@@ -27,7 +27,7 @@ Define las reglas que debe cumplir el XML.
 
 ### Paso 2: Asociarlo al XML
 
-``` xml
+```xml
 <libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="libros.xsd">
 </libros>
@@ -37,28 +37,28 @@ Define las reglas que debe cumplir el XML.
 
 El parser comprueba estructura, tipos y restricciones.
 
-------------------------------------------------------------------------
+---
 
 ## 3. XSD `<schema>`{=html}
 
 Elemento raíz:
 
-``` xml
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </xs:schema>
 ```
 
-------------------------------------------------------------------------
+---
 
-## 4. XSD Elements
+## 4. XSD elementos
 
-``` xml
+```xml
 <xs:element name="nombre" type="xs:string"/>
 ```
 
 Elemento complejo:
 
-``` xml
+```xml
 <xs:element name="persona">
   <xs:complexType>
     <xs:sequence>
@@ -69,19 +69,19 @@ Elemento complejo:
 </xs:element>
 ```
 
-------------------------------------------------------------------------
+---
 
-## 5. XSD Attributes
+## 5. XSD atributos
 
-``` xml
+```xml
 <xs:attribute name="dni" type="xs:string" use="required"/>
 ```
 
-------------------------------------------------------------------------
+---
 
-## 6. XSD Restrictions
+## 6. XSD restricciones
 
-``` xml
+```xml
 <xs:simpleType name="edadTipo">
   <xs:restriction base="xs:int">
     <xs:minInclusive value="0"/>
@@ -90,77 +90,77 @@ Elemento complejo:
 </xs:simpleType>
 ```
 
-------------------------------------------------------------------------
+---
 
-## 7. XSD Complex Elements
+## 7. XSD Elementos Complejos
 
 Permiten estructuras jerárquicas con hijos y atributos.
 
-------------------------------------------------------------------------
+---
 
-## 8. XSD Empty
+## 8. XSD Vacío
 
-``` xml
+```xml
 <xs:complexType/>
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 9. XSD Elements-only
 
 Solo elementos, sin texto.
 
-------------------------------------------------------------------------
+---
 
 ## 10. XSD Text-only
 
-``` xml
+```xml
 <xs:element name="mensaje" type="xs:string"/>
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 11. XSD Mixed
 
-``` xml
+```xml
 <xs:complexType mixed="true"/>
 ```
 
-------------------------------------------------------------------------
+---
 
-## 12. XSD Indicators
+## 12. XSD indicadores
 
--   sequence
--   choice
--   all
+- sequence
+- choice
+- all
 
-------------------------------------------------------------------------
+---
 
 ## 13. XSD `<any>`{=html}
 
-``` xml
+```xml
 <xs:any/>
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 14. XSD `<anyAttribute>`{=html}
 
-``` xml
+```xml
 <xs:anyAttribute/>
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 15. XSD Substitution
 
 Permite herencia de elementos.
 
-------------------------------------------------------------------------
+---
 
 ## 16. Ejemplo Completo
 
-``` xml
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:simpleType name="edadTipo">
@@ -183,22 +183,22 @@ Permite herencia de elementos.
 </xs:schema>
 ```
 
-------------------------------------------------------------------------
+---
 
 ## 17. Tipos de datos
 
--   xs:string
--   xs:int
--   xs:decimal
--   xs:boolean
--   xs:date
+- xs:string
+- xs:int
+- xs:decimal
+- xs:boolean
+- xs:date
 
-------------------------------------------------------------------------
+---
 
 ## 18. Reference
 
 Reutilización de tipos.
 
-------------------------------------------------------------------------
+---
 
 # FIN
