@@ -1,4 +1,7 @@
-<dependencies>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dependencies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="configuracion.xsd">
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
