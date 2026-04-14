@@ -229,23 +229,20 @@ Ejemplo:
 
 ---
 
-# 15. XSD Substitution
+# 15. Enumeration
 
-Permite que un elemento sea sustituido por otros.
+La etiqueta <xs:enumeration> en XSD se utiliza para restringir los valores posibles de un elemento o atributo a una lista cerrada de opciones.
 
-Ejemplo:
-```xml
-<xs:element name="animal" type="xs:string"/>
-
-<xs:element name="perro" substitutionGroup="animal"/>
-<xs:element name="gato" substitutionGroup="animal"/>
 ```
+<xs:simpleType name="generoType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MASCULINO"/>
+      <xs:enumeration value="FEMENINO"/>
+      <xs:enumeration value="OTROS"/>
+    </xs:restriction>
+  </xs:simpleType>
 
-XML válido:
-```xml
-<perro>Bulldog</perro>
 ```
-
 ---
 
 # 16. Ejemplo Completo
@@ -294,6 +291,7 @@ Tipos básicos:
 - xs:date
 
 Ejemplo:
+
 ```xml
 <xs:element name="precio" type="xs:decimal"/>
 <xs:element name="activo" type="xs:boolean"/>
