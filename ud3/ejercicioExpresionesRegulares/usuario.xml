@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="usuarios.xsd">
+
+    <usuario>
+        <nombre>Juan</nombre>
+        <apellido>Perez</apellido>
+        <email>juan.perez@gmail.com</email>
+        <telefono>612345678</telefono>
+        <dni>12345678Z</dni>
+        <codigoPostal>13065</codigoPostal>
+        <username>juanp23</username>
+        <password>Abc12345</password>
+    </usuario>
+
+    <usuario>
+        <nombre>Ana</nombre>
+        <apellido>Lopez</apellido>
+        <email>ana.lopez@hotmail.com</email>
+        <telefono>712345678</telefono>
+        <dni>87654321X</dni>
+        <codigoPostal>28080</codigoPostal>
+        <username>ana_99</username>
+        <password>Segura123</password>
+    </usuario>
+
+    <usuario>
+        <nombre>Carlos</nombre>
+        <apellido>Garcia</apellido>
+        <email>carlos.garcia@empresa.es</email>
+        <telefono>612000111</telefono>
+        <dni>11223344A</dni>
+        <codigoPostal>45001</codigoPostal>
+        <username>carlos15</username>
+        <password>Password1</password>
+    </usuario>
+</usuarios>
