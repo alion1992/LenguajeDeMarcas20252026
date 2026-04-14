@@ -301,26 +301,5 @@ Ejemplo:
 
 ---
 
-# 18. Reference
-
-Permite reutilizar elementos o tipos.
-
-Reutilizar tipo:
-```xml
-<xs:element name="edad" type="edadTipo"/>
-```
-
-Reutilizar elemento:
-```xml
-<xs:element name="nombre" type="xs:string"/>
-
-<xs:element name="persona">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element ref="nombre"/>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
-```
 
 ---
