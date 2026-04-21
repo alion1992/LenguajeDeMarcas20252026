@@ -1,0 +1,77 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="trenes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tren" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="origen" type="codigoEstacion"/>
+                            <xs:element name="destino" type="codigoEstacion"/>
+                            <xs:element name="pasajero">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="documento" type="documentoIdentificativo"/>
+                                        <xs:element name="asiento" type="numeroAsiento"/>
+                                        <xs:element name="clase" type="tipoClases"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="localizador" type="localizadorPasajero"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="salida">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="anden" type="numeroAnden"/>
+                                        <xs:element name="hora"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="codigo" type="codigoTren"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="codigoTren">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}[0-9]{3,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="localizadorPasajero">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z0-9]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="numeroAsiento">
+        <xs:restriction base="xs:string">
+            <!--<xs:pattern value="[1-8]{1}[0-9]{0,1}[A-D]{1}"/>-->
+            <xs:pattern value="([1-7]{0,1}|80|[1-9]{0,1})[A-D]"/>
+            <!--<xs:pattern value="([1-9]|[1-7][0-9]|80)[A-D]"/>-->
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="numeroAnden">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][0-9]{1,2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="documentoIdentificativo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}[0-9]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="codigoEstacion">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoClases">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="TURISTA"/>
+            <xs:enumeration value="BUSINESS"/>
+            <xs:enumeration value="PRIMERA"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

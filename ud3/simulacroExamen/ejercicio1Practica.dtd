@@ -1,0 +1,16 @@
+<!ELEMENT tienda (datos)>
+<!ELEMENT datos (datosTienda, datosCliente, detallePedido)>
+<!ELEMENT datosTienda (nombre, cif, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT datosCliente (nombre, cif, telefono)>
+<!ELEMENT detallePedido (producto+)>
+<!ATTLIST detallePedido total CDATA #REQUIRED>
+<!ELEMENT producto (descripcion, unidades, envioGratis?, precio)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT envioGratis (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST producto codigo ID #REQUIRED>
+<!ATTLIST producto categoria (Electrónica|Informática|Hogar) #IMPLIED>

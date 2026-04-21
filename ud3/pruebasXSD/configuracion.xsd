@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="dependencies" >
+<xs:complexType>
+    <xs:sequence>
+    <xs:element name="dependency" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="groupId">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-z.]+"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="artifactId">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-z-]+"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name ="scope">
+                    <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="runtime"/>
+                        <xs:enumeration value="compile"/>
+                        <xs:enumeration value="test"/>
+                        <xs:enumeration value="system"/>
+
+                    </xs:restriction>
+                    </xs:simpleType>
+
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+    </xs:sequence>
+
+</xs:complexType>
+</xs:element>
+</xs:schema>

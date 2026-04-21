@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda SYSTEM "ejercicio1Practica.dtd">
+<tienda>
+    <datos>
+        <datosTienda>
+            <nombre>TecnoShop</nombre>
+            <cif>B12345678</cif>
+            <telefono>912345678</telefono>
+        </datosTienda>
+        <datosCliente>
+            <nombre>Juan García</nombre>
+            <cif>12345678Z</cif>
+            <telefono>600123456</telefono>
+        </datosCliente>
+        <detallePedido total="105€" >
+            <producto codigo="P01" categoria="Electrónica">
+                <descripcion>Auriculares Bluetooth</descripcion>
+                <unidades>2</unidades>
+                <envioGratis></envioGratis>
+                <precio>40€</precio>
+            </producto>
+            <producto codigo="P02" categoria="Informática">
+                <descripcion>Ratón Gaming</descripcion>
+                <unidades>1</unidades>
+                <precio>25€</precio>
+            </producto>
+        </detallePedido>
+    </datos>
+</tienda>

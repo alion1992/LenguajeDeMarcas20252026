@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trenes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+    <tren codigo="AV123">
+        <origen>MAD</origen>
+        <destino>SEV</destino>
+        <pasajero localizador="A1B2C3">
+            <nombre>Carlos Ruiz</nombre>
+            <documento>AB123456</documento>
+            <asiento>80A</asiento>
+            <clase>TURISTA</clase>
+        </pasajero>
+        <salida>
+            <anden>B12</anden>
+            <hora>09:45:00</hora>
+        </salida>
+    </tren>
+    <tren codigo="AL4567">
+        <origen>BCN</origen>
+        <destino>VAL</destino>
+        <pasajero localizador="Z9X8Y7">
+            <nombre>Lucía Gómez</nombre>
+            <documento>CD654321</documento>
+            <asiento>7C</asiento>
+            <clase>PRIMERA</clase>
+        </pasajero>
+        <salida>
+            <anden>A3</anden>
+            <hora>14:20:00</hora>
+        </salida>
+    </tren>
+</trenes>
