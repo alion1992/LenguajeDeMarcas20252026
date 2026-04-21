@@ -150,6 +150,9 @@ let obj = JSON.parse(datos);
 console.log(obj.nombre);
 ```
 
+
+
+
 ---
 
 ## 8. JSON en APIs
@@ -199,7 +202,7 @@ Herramientas online:
 
 ---
 
-## 12. Ejercicio resuelto
+## 12. EJEMPLOS
 
 ### JSON de alumnos
 
@@ -218,6 +221,11 @@ Herramientas online:
   ]
 }
 ```
+
+### JSON de API´s
+
+<a heref="https://pokeapi.co/api/v2/pokemon/ditto">https://pokeapi.co/api/v2/pokemon/ditto</a>
+<a hrenf="https://api.chucknorris.io/jokes/random">https://api.chucknorris.io/jokes/random</a>
 
 ---
 
