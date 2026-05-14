@@ -1,0 +1,152 @@
+[
+  {
+    "nombre": "Aragorn",
+    "raza": "Humano",
+    "bando": "Bueno",
+    "arma": "Espada",
+    "ataque": 95,
+    "defensa": 90,
+    "magia": 20,
+    "vida": 100,
+    "habilidades": [
+      "Liderazgo",
+      "Combate cuerpo a cuerpo",
+      "Supervivencia"
+    ]
+  },
+  {
+    "nombre": "Legolas",
+    "raza": "Elfo",
+    "bando": "Bueno",
+    "arma": "Arco",
+    "ataque": 92,
+    "defensa": 70,
+    "magia": 30,
+    "vida": 85,
+    "habilidades": [
+      "Puntería extrema",
+      "Agilidad",
+      "Visión élfica"
+    ]
+  },
+  {
+    "nombre": "Gimli",
+    "raza": "Enano",
+    "bando": "Bueno",
+    "arma": "Hacha",
+    "ataque": 88,
+    "defensa": 95,
+    "magia": 10,
+    "vida": 110,
+    "habilidades": [
+      "Resistencia",
+      "Fuerza bruta",
+      "Combate pesado"
+    ]
+  },
+  {
+    "nombre": "Gandalf",
+    "raza": "Mago",
+    "bando": "Bueno",
+    "arma": "Bastón",
+    "ataque": 98,
+    "defensa": 85,
+    "magia": 100,
+    "vida": 95,
+    "habilidades": [
+      "Magia blanca",
+      "Sabiduría",
+      "Control del fuego"
+    ]
+  },
+  {
+    "nombre": "Frodo",
+    "raza": "Hobbit",
+    "bando": "Bueno",
+    "arma": "Daga",
+    "ataque": 40,
+    "defensa": 50,
+    "magia": 5,
+    "vida": 70,
+    "habilidades": [
+      "Sigilo",
+      "Resistencia mental",
+      "Portador del Anillo"
+    ]
+  },
+  {
+    "nombre": "Sam",
+    "raza": "Hobbit",
+    "bando": "Bueno",
+    "arma": "Espada corta",
+    "ataque": 55,
+    "defensa": 60,
+    "magia": 0,
+    "vida": 80,
+    "habilidades": [
+      "Lealtad",
+      "Cocina",
+      "Valentía"
+    ]
+  },
+  {
+    "nombre": "Sauron",
+    "raza": "Maia",
+    "bando": "Malo",
+    "arma": "Maza",
+    "ataque": 100,
+    "defensa": 95,
+    "magia": 100,
+    "vida": 150,
+    "habilidades": [
+      "Oscuridad",
+      "Manipulación",
+      "Control del Anillo"
+    ]
+  },
+  {
+    "nombre": "Saruman",
+    "raza": "Mago",
+    "bando": "Malo",
+    "arma": "Bastón",
+    "ataque": 85,
+    "defensa": 75,
+    "magia": 95,
+    "vida": 90,
+    "habilidades": [
+      "Magia oscura",
+      "Persuasión",
+      "Invocación"
+    ]
+  },
+  {
+    "nombre": "Gollum",
+    "raza": "Criatura",
+    "bando": "Malo",
+    "arma": "Garras",
+    "ataque": 45,
+    "defensa": 30,
+    "magia": 0,
+    "vida": 50,
+    "habilidades": [
+      "Sigilo",
+      "Escalada",
+      "Obsesión por el Anillo"
+    ]
+  },
+  {
+    "nombre": "Rey Brujo de Angmar",
+    "raza": "Nazgûl",
+    "bando": "Malo",
+    "arma": "Espada maldita",
+    "ataque": 93,
+    "defensa": 80,
+    "magia": 85,
+    "vida": 120,
+    "habilidades": [
+      "Terror",
+      "Nigromancia",
+      "Montura alada"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+Crear un simple buscador (no es necesario css) para buscar a los personajes del señor de los anillos. Estarán disponibles los siguientes botones que carguen la siguiente información:
+1. Personajes buenos y Personales Malos
+2. Teniendo en cuenta que tenemos las siguientes razas: 
+    Humano
+    Elfo
+    Enano
+    Mago
+    Hobbit
+    Maia
+    Criatura
+    Nazgûl
+Crea dos botones que inicialmente esten cargados los heroes de raza "Humano". Los dos botones serán "SIGUIENTE RAZA" y "RAZA ANTERIOR"
+Cada vez que se pulsen deben mostrarse la siguiente raza o la anterior cargada.
+3. Cargar los heroes con más de 100 de vida
+4. Personajes Debiles: Cargar heroes con menos de 50 de ataque y menos de 50 de defensa
+5. Buscar personaje fuertes: Encuentra un heroe con mas de 60 de ataque 60 de defensa y más de 100 de vida. 
